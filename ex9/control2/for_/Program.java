@@ -3,11 +3,9 @@
  * 
  * */
 
-package ex8.control2;
+package ex9.control2.for_;
 
 import java.util.Scanner;
-
-// import 하는 3가지 방법 1. 직접 입력, 2. 코드 작성시 빨간 줄의 도움 3. ctrl + shift + o 로 자동입력
 
 public class Program {
 	public static void main(String[] args) {
@@ -63,12 +61,16 @@ public class Program {
 			System.out.println("┌──────────────────┐");
 			System.out.println("│      성적출력       │");
 			System.out.println("└──────────────────┘");
-			System.out.printf("국어1 : %3d\n", kor1);
-			System.out.printf("국어2 : %3d\n", kor2);
-			System.out.printf("국어3 : %3d\n", kor3);
+			
+			// ---- For 문을 활용해 보자
+			
+			for (int i=0; i<3; i++) {
+				System.out.printf("국어%d : %3d\n", i+1, kor1);
+		
+			}
+
+			
 			System.out.printf("총점 : %3d\n", total);
-			// 평균이 63.33이 아닌 63.00이 나온 이유
-			// 정수를 정수로 나누면 정수가된다. 이를 float로 변환하면 소수자리는 모두 0처리된다.
 			System.out.printf("평균 : %6.2f\n", avg);
 			System.out.println("────────────────────");
 	
