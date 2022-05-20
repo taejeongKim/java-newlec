@@ -1,5 +1,5 @@
 /*
- * 사용자로 부터 입력을 받은 값을 사용하여 총점과 평균을 계산하고 출력하는 프로그램
+ * for문 활용
  * 
  * */
 
@@ -63,6 +63,7 @@ public class Program {
 			System.out.println("└──────────────────┘");
 			
 			// ---- For 문을 활용해 보자
+			// 우선 점수1만 반복하도록 ...
 			
 			for (int i=0; i<3; i++) {
 				System.out.printf("국어%d : %3d\n", i+1, kor1);

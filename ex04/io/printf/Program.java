@@ -15,7 +15,6 @@ public class Program {
 		// 2가지 옵션. 
 		// avg = (float)(total / 3.0);  // double 을 float로 형변환
 		avg = total / 3.0f; // 처음부터 float으로 나눠줌.
-
 		// println() 함수로 해결
 		System.out.println("┌──────────────────┐");
 		System.out.println("│      성적출력       │");

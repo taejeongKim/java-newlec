@@ -7,8 +7,6 @@ package ex06.operator;
 
 import java.util.Scanner;
 
-// import 하는 3가지 방법 1. 직접 입력, 2. 코드 작성시 빨간 줄의 도움 3. ctrl + shift + o 로 자동입력
-
 public class Program {
 	public static void main(String[] args) {
 

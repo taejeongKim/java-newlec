@@ -1,13 +1,12 @@
 /*
- * 사용자로 부터 입력을 받은 값을 사용하여 총점과 평균을 계산하고 출력하는 프로그램
+ * 유효성 검사
+ * do-while 문 활용
  * 
  * */
 
 package ex08.control.dowhile;
 
 import java.util.Scanner;
-
-// import 하는 3가지 방법 1. 직접 입력, 2. 코드 작성시 빨간 줄의 도움 3. ctrl + shift + o 로 자동입력
 
 public class Program {
 	public static void main(String[] args) {
@@ -32,6 +31,7 @@ public class Program {
 			Scanner scan = new Scanner (System.in);
 			
 			// do while 문
+			// 조건이 충족되는 한 do문을 반복하라.
 			do {
 				System.out.print("국어1 : ");
 				kor1 = scan.nextInt();	
@@ -57,7 +57,7 @@ public class Program {
 			// --------------  성적 출력 부분 -----------------
 	
 			total = kor1 + kor2 + kor3;
-			avg = total / 3.0f; // 처음부터 float으로 나눠줌.	
+			avg = total / 3.0f; 
 			
 			
 			System.out.println("┌──────────────────┐");
@@ -67,8 +67,6 @@ public class Program {
 			System.out.printf("국어2 : %3d\n", kor2);
 			System.out.printf("국어3 : %3d\n", kor3);
 			System.out.printf("총점 : %3d\n", total);
-			// 평균이 63.33이 아닌 63.00이 나온 이유
-			// 정수를 정수로 나누면 정수가된다. 이를 float로 변환하면 소수자리는 모두 0처리된다.
 			System.out.printf("평균 : %6.2f\n", avg);
 			System.out.println("────────────────────");
 	
