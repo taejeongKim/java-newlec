@@ -4,7 +4,7 @@
 
 package ex17.practice;
 
-public class Star {
+public class P01_Star {
 	public static void main(String[] args) {
 		
 		//∫∞ ∆–≈œ 1
