@@ -1,6 +1,6 @@
 package ex17.practice;
 
-public class P5_omok2 {
+public class P05_omok2 {
 	public static void main(String[] args) {
 
 		// 오목판 그리기

@@ -1,6 +1,6 @@
 package ex17.practice;
 
-public class P7_array2 {
+public class P07_array2 {
 
 	public static void main(String[] args) {
 		// 

@@ -1,6 +1,6 @@
 package ex17.practice;
 
-public class P4_omok {
+public class P04_omok {
 	public static void main(String[] args) {
 		//¿Ü°ûºÎºÐ ´Ùµë±â
 		

@@ -1,6 +1,6 @@
 package ex17.practice;
 
-public class P6_array1 {
+public class P06_array1 {
 
 	public static void main(String[] args) {
 		// array 정의 및 초기화

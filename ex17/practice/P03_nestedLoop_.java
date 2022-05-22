@@ -1,6 +1,6 @@
 package ex17.practice;
 
-public class P3_nestedLoop_ {
+public class P03_nestedLoop_ {
 	public static void main(String[] args) {
 		/*
 		 * 1 2 3 
