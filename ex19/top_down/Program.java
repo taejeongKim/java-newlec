@@ -4,7 +4,7 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		// Lotto 번호 생성기
+		// 
 		
 		int[][] lottos = null;
 		int menu;
