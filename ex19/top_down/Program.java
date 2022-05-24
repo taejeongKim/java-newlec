@@ -18,7 +18,7 @@ public class Program {
 				lottos = createLottoAuto();
 				break;
 			case 2:
-				lottos = createLottoAuto();
+				lottos = createLottoManual();
 				break;
 			case 3:
 				printLottos(lottos);
@@ -31,20 +31,24 @@ public class Program {
 			
 		}
 	}
-
-	private static void printLottos(int[][] lottos) {
-		// TODO Auto-generated method stub
+	
+	private static int inputMenu() {
 		
+		return 0;
 	}
-
+	
 	private static int[][] createLottoAuto() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	private static int inputMenu() {
-		
-		return 0;
+	private static int[][] createLottoManual() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
+	private static void printLottos(int[][] lottos) {
+		// TODO Auto-generated method stub
+		
+	}
 }

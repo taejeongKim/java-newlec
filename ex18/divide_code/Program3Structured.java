@@ -7,7 +7,7 @@ package ex18.divide_code;
 
 import java.util.Scanner;
 
-public class Program3 {
+public class Program3Structured {
 	
 	
 	
@@ -26,16 +26,16 @@ public class Program3 {
 		while (keepLoop) {
 
 			// 메뉴함수는 menu를 리턴해줘야 한다.
-			menu = 메뉴입력();
+			menu = inputMenu();
 			
 			switch (menu) {
 
 			case 1: 
-				성적입력(korList);
+				inputKors(korList);
 				break;
 				
 			case 2:
-				성적출력(korList);
+				printKors(korList);
 				break;
 				
 			case 3: 
@@ -52,7 +52,7 @@ public class Program3 {
 		}
 	}
 	
-	static void 성적입력(int[] kors) {
+	static void inputKors(int[] kors) {
 		
 		// 성적 입력 함수 
 		
@@ -75,7 +75,7 @@ public class Program3 {
 		}
 	}
 	
-	static void 성적출력(int[] kors) {
+	static void printKors(int[] kors) {
 
 		// 성적 출력 함수 
 		
@@ -102,7 +102,7 @@ public class Program3 {
 	}
 
 	// 메뉴입력함수는 리턴값이 있는 함수이므로 리턴값의 형식을 써줘야 한다. 
-	static int 메뉴입력() {
+	static int inputMenu() {
 		
 		Scanner scan = new Scanner(System.in);
 		
