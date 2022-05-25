@@ -2,36 +2,36 @@ package ex17.practice;
 
 public class P04_omok {
 	public static void main(String[] args) {
-		//¿Ü°ûºÎºĞ ´Ùµë±â
+		//ì™¸ê³½ë¶€ë¶„ ë‹¤ë“¬ê¸°
 		
 		System.out.println();
-		// x=4 y=3 ÁöÁ¡¿¡ °ËÀº µ¹ ³õ±â
+		// x=4 y=3 ì§€ì ì— ê²€ì€ ëŒ ë†“ê¸°
 
 		for (int y = 1; y <= 10; y++) {
 
 			for (int x = 1; x <= 10; x++) {
 
 				if (x == 4 && y == 3)
-					System.out.printf("%c", '¡Ü');
+					System.out.printf("%c", 'â—');
 				
 				else if (x ==1 && y == 1)
-					System.out.printf("%c", '¦£');
+					System.out.printf("%c", 'â”Œ');
 				else if (x ==10 && y == 1)
-					System.out.printf("%c", '¦¤');
+					System.out.printf("%c", 'â”');
 				else if (x ==1 && y == 10)
-					System.out.printf("%c", '¦¦');
+					System.out.printf("%c", 'â””');
 				else if (x ==10 && y == 10)
-					System.out.printf("%c", '¦¥');
+					System.out.printf("%c", 'â”˜');
 				else if (y == 1)
-					System.out.printf("%c", '¦¨');
+					System.out.printf("%c", 'â”¬');
 				else if (y == 10)
-					System.out.printf("%c", '¦ª');
+					System.out.printf("%c", 'â”´');
 				else if (x == 1)
-					System.out.printf("%c", '¦§');
+					System.out.printf("%c", 'â”œ');
 				else if (x == 10)
-					System.out.printf("%c", '¦©');
+					System.out.printf("%c", 'â”¤');
 				else
-					System.out.printf("%c", '¦«');
+					System.out.printf("%c", 'â”¼');
 			}
 
 			System.out.println();

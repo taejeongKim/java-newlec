@@ -13,28 +13,28 @@ public class Program {
 		total = kor1 + kor2 + kor3;
 		avg = total / 3;
 
-		// -------------- ¼ºÀû Ãâ·Â ºÎºĞ ----------------------
-		// ÁÙ¹Ù²ŞÀÌ ¾È µÇ´Â ¹®Á¦
-		// escape ¹®ÀÚ È°¿ë ÇØ°á
-		System.out.print("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤\n");
-		System.out.print("¦¢      ¼ºÀûÃâ·Â       ¦¢\n");
-		System.out.print("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥\n");
-		System.out.print("±¹¾î1 : 0\n");
-		System.out.print("±¹¾î2 : 0\n");
-		System.out.print("±¹¾î3 : 0\n");
-		System.out.print("ÃÑÁ¡ : 0\n");
-		System.out.print("Æò±Õ : 0\n");
-		System.out.print("¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡\n");
+		// -------------- ì„±ì  ì¶œë ¥ ë¶€ë¶„ ----------------------
+		// ì¤„ë°”ê¿ˆì´ ì•ˆ ë˜ëŠ” ë¬¸ì œ
+		// escape ë¬¸ì í™œìš© í•´ê²°
+		System.out.print("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”\n");
+		System.out.print("â”‚      ì„±ì ì¶œë ¥       â”‚\n");
+		System.out.print("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜\n");
+		System.out.print("êµ­ì–´1 : 0\n");
+		System.out.print("êµ­ì–´2 : 0\n");
+		System.out.print("êµ­ì–´3 : 0\n");
+		System.out.print("ì´ì  : 0\n");
+		System.out.print("í‰ê·  : 0\n");
+		System.out.print("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n");
 		
-		// println() ÇÔ¼ö·Î ÇØ°á
-		System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-		System.out.println("¦¢      ¼ºÀûÃâ·Â       ¦¢");
-		System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
-		System.out.println("±¹¾î1 : 0");
-		System.out.println("±¹¾î2 : 0");
-		System.out.println("±¹¾î3 : 0");
-		System.out.println("ÃÑÁ¡ : 0");
-		System.out.println("Æò±Õ : 0");
-		System.out.println("¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡");
+		// println() í•¨ìˆ˜ë¡œ í•´ê²°
+		System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+		System.out.println("â”‚      ì„±ì ì¶œë ¥       â”‚");
+		System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
+		System.out.println("êµ­ì–´1 : 0");
+		System.out.println("êµ­ì–´2 : 0");
+		System.out.println("êµ­ì–´3 : 0");
+		System.out.println("ì´ì  : 0");
+		System.out.println("í‰ê·  : 0");
+		System.out.println("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€");
 	}
 }

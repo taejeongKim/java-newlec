@@ -1,23 +1,33 @@
-/*
- * <Lotto 관리 프로그램>
- * 1. 번호 자동 생성
- * 2. 번호 수동 생성
- * 3. 내 로또번호 보기
- * 4. 종료
- * 
- * 로또번호 : 1~45 중 6개 숫자 배열
- * 로또 갯수 선택 가능
- * 
- * 변수: int[][] lottos, int menu
- * */
-
 package test;
 
-public class Test{
+import java.util.Scanner;
+
+public class Test {
 	public static void main(String[] args) {
 		
+		// 2李� 諛곗뿴
+		
+		int[] kor1 = new int[3];
+		int[] kor2 = new int[3];
+		int[] kor3 = new int[3];
+		
+		int[][] kors = new int[2][3];
+		
+		for (int j=0; j<2; j++)
+			for (int i=0; i<3; i++) {
+				if (j==1)
+					kors[j][i] = i+3;
+				else
+					kors[j][i] = i;
+				System.out.println(kors[j][i]);
+			}
 		
 		
+		
+		
+
+		
+
 	
 	}
 }

@@ -1,5 +1,5 @@
- /*
- * ∫∞ 10∞≥ ¬Ô±‚
+/*
+ * Î≥Ñ 10Í∞ú Ï∞çÍ∏∞
  */
 
 package ex17.practice;
@@ -7,26 +7,26 @@ package ex17.practice;
 public class P01_Star {
 	public static void main(String[] args) {
 		
-		//∫∞ ∆–≈œ 1
+		//Î≥Ñ Ìå®ÌÑ¥ 1
 		for (int j=0; j<10; j++) {
 			for (int i=0; i<10; i++) {
-				System.out.printf("%c", '°Ÿ');
+				System.out.printf("%c", '‚òÜ');
 			}
 			System.out.println();
 		}
 		
-		//∫∞ ∆–≈œ 2
+		//Î≥Ñ Ìå®ÌÑ¥ 2
 		for (int j=0; j<10; j++) {
 			for (int i=0; i<j+1; i++) {
-				System.out.printf("%c", '°Ÿ');
+				System.out.printf("%c", '‚òÜ');
 			}
 			System.out.println();
 		}
 		
-		//∫∞ ∆–≈œ 3
+		//Î≥Ñ Ìå®ÌÑ¥ 3
 		for (int j=0; j<10; j++) {
 			for (int i=10; i>j; i--) {
-				System.out.printf("%c", '°Ÿ');
+				System.out.printf("%c", '‚òÜ');
 			}
 			System.out.println();
 		}

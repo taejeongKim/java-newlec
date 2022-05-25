@@ -1,4 +1,4 @@
- /*
+/*
  * continue & break
  */
 
@@ -12,12 +12,12 @@ public class Program {
 		int n = 0;
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("°ªÀ» space·Î ±¸ºĞÇÏ¿© 5°³ ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ê°’ì„ spaceë¡œ êµ¬ë¶„í•˜ì—¬ 5ê°œ ì´ìƒ ì…ë ¥í•˜ì„¸ìš”");
 		
 		// 3 5 67 45 345 33 222 12
 		
-		// scan.hasNext()½ºÆ®¸² ¹öÆÛ¿¡ ÀĞ¾î¿Ã data°¡ ÀÖ´ÂÁö bloolean °ªÀ» ¸®ÅÏÇÑ´Ù.
-		//Áï, °ªÀÌ ÀÖÀ¸¸é ¾ğÁ¦³ª true
+		// scan.hasNext()ìŠ¤íŠ¸ë¦¼ ë²„í¼ì— ì½ì–´ì˜¬ dataê°€ ìˆëŠ”ì§€ bloolean ê°’ì„ ë¦¬í„´í•œë‹¤.
+		//ì¦‰, ê°’ì´ ìˆìœ¼ë©´ ì–¸ì œë‚˜ true
 		while(scan.hasNext()) {
 			n = scan.nextInt();
 			

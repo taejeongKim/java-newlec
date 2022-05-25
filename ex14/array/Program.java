@@ -1,6 +1,6 @@
- /*
- * Áö±İ±îÁöÀÇ ÄÚµå¸¦ array¸¦ »ç¿ëÇÏ¿© ¹Ù²Ù¾îº¸ÀÚ.
- * arrayÀÇ È¿¿ë¼ºÀ» ´À³¥ ¼ö ÀÖ´Â°¡?
+/*
+ * ì§€ê¸ˆê¹Œì§€ì˜ ì½”ë“œë¥¼ arrayë¥¼ ì‚¬ìš©í•˜ì—¬ ë°”ê¾¸ì–´ë³´ì.
+ * arrayì˜ íš¨ìš©ì„±ì„ ëŠë‚„ ìˆ˜ ìˆëŠ”ê°€?
  */
 
 package ex14.array;
@@ -20,25 +20,25 @@ public class Program {
 //		kor2 = 0;
 //		kor3 = 0;
 		
-		// ¹è¿­ÀÇ data´Â ±âº»ÀûÀ¸·Î 0À¸·Î ÃÊ±âÈ­µÈ´Ù. µû¶ó¼­, ¾Æ·¡¿Í °°ÀÌ ÇÏÁö ¾Ê¾Æµµ µÈ´Ù.
+		// ë°°ì—´ì˜ dataëŠ” ê¸°ë³¸ì ìœ¼ë¡œ 0ìœ¼ë¡œ ì´ˆê¸°í™”ëœë‹¤. ë”°ë¼ì„œ, ì•„ë˜ì™€ ê°™ì´ í•˜ì§€ ì•Šì•„ë„ ëœë‹¤.
 		for (int i=0; i<3; i++) {
 			kors[i] = 0;
 		}
 
-		// break ½Ã ºüÁ®³ª¿À´Â ÁöÁ¡.
-		Á¾·á:
+		// break ì‹œ ë¹ ì ¸ë‚˜ì˜¤ëŠ” ì§€ì .
+		ì¢…ë£Œ:
 		while (true) {
 
 			Scanner scan = new Scanner(System.in);
 
-			// -------------- ¸Ş´º ºÎºĞ -----------------
-			System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-			System.out.println("¦¢      ¸Ş´º         ¦¢");
-			System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+			// -------------- ë©”ë‰´ ë¶€ë¶„ -----------------
+			System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+			System.out.println("â”‚      ë©”ë‰´         â”‚");
+			System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
 			
-			System.out.println("1. ¼ºÀûÀÔ·Â");
-			System.out.println("2. ¼ºÀûÃâ·Â");
-			System.out.println("3. Á¾·á");
+			System.out.println("1. ì„±ì ì…ë ¥");
+			System.out.println("2. ì„±ì ì¶œë ¥");
+			System.out.println("3. ì¢…ë£Œ");
 			
 			System.out.print("> ");
 			menu = scan.nextInt();
@@ -47,42 +47,42 @@ public class Program {
 			// label
 			case 1: 
 				
-				// -------------- ¼ºÀû ÀÔ·Â ºÎºĞ -----------------
-				System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-				System.out.println("¦¢      ¼ºÀûÀÔ·Â       ¦¢");
-				System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+				// -------------- ì„±ì  ì…ë ¥ ë¶€ë¶„ -----------------
+				System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+				System.out.println("â”‚      ì„±ì ì…ë ¥       â”‚");
+				System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
 				
 				
-				// do while ¹® ¹İº¹À» for¹®À¸·Î ... array »ç¿ë
+				// do while ë¬¸ ë°˜ë³µì„ forë¬¸ìœ¼ë¡œ ... array ì‚¬ìš©
 				/*
 				do {
-					System.out.print("±¹¾î1 : ");
+					System.out.print("êµ­ì–´1 : ");
 					kor1 = scan.nextInt();
 					if (kor1 < 0 || 100 < kor1)
-						System.out.println("À¯È¿ÇÑ ¹üÀ§(0~100)¸¦ ³Ñ¾î°¬½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
+						System.out.println("ìœ íš¨í•œ ë²”ìœ„(0~100)ë¥¼ ë„˜ì–´ê°”ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
 				} while (kor1 < 0 || 100 < kor1);
 				
 				do {
-					System.out.print("±¹¾î2 : ");
+					System.out.print("êµ­ì–´2 : ");
 					kor2 = scan.nextInt();
 					if (kor2 < 0 || 100 < kor2)
-						System.out.println("À¯È¿ÇÑ ¹üÀ§(0~100)¸¦ ³Ñ¾î°¬½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
+						System.out.println("ìœ íš¨í•œ ë²”ìœ„(0~100)ë¥¼ ë„˜ì–´ê°”ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
 				} while (kor2 < 0 || 100 < kor2);
 				
 				do {
-					System.out.print("±¹¾î3 : ");
+					System.out.print("êµ­ì–´3 : ");
 					kor3 = scan.nextInt();
 					if (kor3 < 0 || 100 < kor3)
-						System.out.println("À¯È¿ÇÑ ¹üÀ§(0~100)¸¦ ³Ñ¾î°¬½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
+						System.out.println("ìœ íš¨í•œ ë²”ìœ„(0~100)ë¥¼ ë„˜ì–´ê°”ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
 				} while (kor3 < 0 || 100 < kor3);
 				*/
 				
 				for (int i=0; i<3; i++)
 					do {
-						System.out.printf("±¹¾î%d : ", i+1);
+						System.out.printf("êµ­ì–´%d : ", i+1);
 						kors[i] = scan.nextInt();
 						if (kors[i] < 0 || 100 < kors[i])
-							System.out.println("À¯È¿ÇÑ ¹üÀ§(0~100)¸¦ ³Ñ¾î°¬½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
+							System.out.println("ìœ íš¨í•œ ë²”ìœ„(0~100)ë¥¼ ë„˜ì–´ê°”ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
 					} while (kors[i] < 0 || 100 < kors[i]);
 									
 				
@@ -91,37 +91,37 @@ public class Program {
 			// label
 			case 2:
 				
-				// -------------- ¼ºÀû Ãâ·Â ºÎºĞ -----------------
+				// -------------- ì„±ì  ì¶œë ¥ ë¶€ë¶„ -----------------
 				
 				//total = kor1 + kor2 + kor3;
 				total = kors[0] + kors[1] + kors[2];
-				avg = total / 3.0f; // Ã³À½ºÎÅÍ floatÀ¸·Î ³ª´²ÁÜ.
+				avg = total / 3.0f; // ì²˜ìŒë¶€í„° floatìœ¼ë¡œ ë‚˜ëˆ ì¤Œ.
 				
-				System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-				System.out.println("¦¢      ¼ºÀûÃâ·Â       ¦¢");
-				System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+				System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+				System.out.println("â”‚      ì„±ì ì¶œë ¥       â”‚");
+				System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
 				
-				// ---- For ¹®À» È°¿ëÇØ º¸ÀÚ, array È°¿ë
+				// ---- For ë¬¸ì„ í™œìš©í•´ ë³´ì, array í™œìš©
 				
 				for (int i = 0; i < 3; i++) {
-					System.out.printf("±¹¾î%d : %3d\n", i + 1, kors[i]);
+					System.out.printf("êµ­ì–´%d : %3d\n", i + 1, kors[i]);
 					
 				}
 				
-				System.out.printf("ÃÑÁ¡ : %3d\n", total);
-				System.out.printf("Æò±Õ : %6.2f\n", avg);
-				System.out.println("¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡");
+				System.out.printf("ì´ì  : %3d\n", total);
+				System.out.printf("í‰ê·  : %6.2f\n", avg);
+				System.out.println("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€");
 				
 				break;
 				
 			// label	
 			case 3: 
-				//¾Æ·¡ break´Â switch¹®À» ºüÁ®³ª¿Ã »Ó while¹®À» ºüÁ®³ª¿ÀÁö ¸øÇÑ´Ù.
-				break Á¾·á;
+				//ì•„ë˜ breakëŠ” switchë¬¸ì„ ë¹ ì ¸ë‚˜ì˜¬ ë¿ whileë¬¸ì„ ë¹ ì ¸ë‚˜ì˜¤ì§€ ëª»í•œë‹¤.
+				break ì¢…ë£Œ;
 			// label	
 			default:
 				
-				System.out.println("ÀÔ·Â¿À·ù, 1~3¹ø±îÁö¸¸ ÀÔ·ÂÇÒ ¼ö ÀÖ½À´Ï´Ù.");
+				System.out.println("ì…ë ¥ì˜¤ë¥˜, 1~3ë²ˆê¹Œì§€ë§Œ ì…ë ¥í•  ìˆ˜ ìˆìŠµë‹ˆë‹¤.");
 				break;
 			
 			}

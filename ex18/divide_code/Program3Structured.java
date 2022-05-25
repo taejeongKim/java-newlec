@@ -1,6 +1,6 @@
  /*
- * ÄÚµå ³ª´©±â ¿¬½À
- * ÇÔ¼öÀÇ °í¸³È­·Î ¿ÜºÎ È¯°æ¿¡ Ãë¾àÇØÁø ÇÔ¼ö¸¦ °­ÇÏ°Ô ¸¸µé¶ó
+ * ì½”ë“œ ë‚˜ëˆ„ê¸° ì—°ìŠµ
+ * í•¨ìˆ˜ì˜ ê³ ë¦½í™”ë¡œ ì™¸ë¶€ í™˜ê²½ì— ì·¨ì•½í•´ì§„ í•¨ìˆ˜ë¥¼ ê°•í•˜ê²Œ ë§Œë“¤ë¼
  */
 
 package ex18.divide_code;
@@ -13,7 +13,7 @@ public class Program3Structured {
 	
 	public static void main(String[] args) {
 		
-		// ´©±º°¡ kors¸¦ korList·Î ¹Ù²Ù¾ú´Ù... 
+		// ëˆ„êµ°ê°€ korsë¥¼ korListë¡œ ë°”ê¾¸ì—ˆë‹¤... 
 		int[] korList = new int[3];
 		int menu;
 		boolean keepLoop = true;
@@ -22,10 +22,10 @@ public class Program3Structured {
 			korList[i] = 0;
 		}
 
-//		Á¾·á:
+//		ì¢…ë£Œ:
 		while (keepLoop) {
 
-			// ¸Ş´ºÇÔ¼ö´Â menu¸¦ ¸®ÅÏÇØÁà¾ß ÇÑ´Ù.
+			// ë©”ë‰´í•¨ìˆ˜ëŠ” menuë¥¼ ë¦¬í„´í•´ì¤˜ì•¼ í•œë‹¤.
 			menu = inputMenu();
 			
 			switch (menu) {
@@ -41,11 +41,11 @@ public class Program3Structured {
 			case 3: 
 				System.out.println("Good-bye~");
 				keepLoop = false;
-//				break Á¾·á;
+//				break ì¢…ë£Œ;
 				break;
 
 			default:
-				System.out.println("ÀÔ·Â¿À·ù, 1~3¹ø±îÁö¸¸ ÀÔ·ÂÇÒ ¼ö ÀÖ½À´Ï´Ù.");
+				System.out.println("ì…ë ¥ì˜¤ë¥˜, 1~3ë²ˆê¹Œì§€ë§Œ ì…ë ¥í•  ìˆ˜ ìˆìŠµë‹ˆë‹¤.");
 				break;
 			
 			}
@@ -54,22 +54,22 @@ public class Program3Structured {
 	
 	static void inputKors(int[] kors) {
 		
-		// ¼ºÀû ÀÔ·Â ÇÔ¼ö 
+		// ì„±ì  ì…ë ¥ í•¨ìˆ˜ 
 		
 		Scanner scan = new Scanner(System.in);
-		int kor; // ºÒÇÊ¿äÇÑ ¿¬»êÀ» ÃÖ¼ÒÈ­ÇÏ±â À§ÇØ º¯¼öÈ°¿ë
+		int kor; // ë¶ˆí•„ìš”í•œ ì—°ì‚°ì„ ìµœì†Œí™”í•˜ê¸° ìœ„í•´ ë³€ìˆ˜í™œìš©
 		
-		System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-		System.out.println("¦¢      ¼ºÀûÀÔ·Â    ¦¢");
-		System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+		System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+		System.out.println("â”‚      ì„±ì ì…ë ¥    â”‚");
+		System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
 		
 		for (int i=0; i<3; i++) {
 			
 			do {
-				System.out.printf("±¹¾î%d : ", i+1);
+				System.out.printf("êµ­ì–´%d : ", i+1);
 				kor = scan.nextInt();
 				if (kor < 0 || 100 < kor)
-					System.out.println("À¯È¿ÇÑ ¹üÀ§(0~100)¸¦ ³Ñ¾î°¬½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
+					System.out.println("ìœ íš¨í•œ ë²”ìœ„(0~100)ë¥¼ ë„˜ì–´ê°”ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
 			} while (kor < 0 || 100 < kor);
 			kors[i] = kor;
 		}
@@ -77,43 +77,43 @@ public class Program3Structured {
 	
 	static void printKors(int[] kors) {
 
-		// ¼ºÀû Ãâ·Â ÇÔ¼ö 
+		// ì„±ì  ì¶œë ¥ í•¨ìˆ˜ 
 		
-		// ¾Æ·¡ º¯¼öµéÀº ¼ºÀû Ãâ·Â¿¡¸¸ »ç¿ëµÇ°í ÀÖÀ¸¹Ç·Î Àü¿ªÈ­ÇÒ ÇÊ¿ä ¾ø´Ù.
+		// ì•„ë˜ ë³€ìˆ˜ë“¤ì€ ì„±ì  ì¶œë ¥ì—ë§Œ ì‚¬ìš©ë˜ê³  ìˆìœ¼ë¯€ë¡œ ì „ì—­í™”í•  í•„ìš” ì—†ë‹¤.
 		int total;
 		float avg;
 		
 		total = kors[0] + kors[1] + kors[2];
 		avg = total / 3.0f; 
 		
-		System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-		System.out.println("¦¢      ¼ºÀûÃâ·Â    ¦¢");
-		System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+		System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+		System.out.println("â”‚      ì„±ì ì¶œë ¥    â”‚");
+		System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
 		
 		for (int i = 0; i < 3; i++) {
-			System.out.printf("±¹¾î%d : %3d\n", i + 1, kors[i]);
+			System.out.printf("êµ­ì–´%d : %3d\n", i + 1, kors[i]);
 			
 		}
 		
-		System.out.printf("ÃÑÁ¡ : %3d\n", total);
-		System.out.printf("Æò±Õ : %6.2f\n", avg);
-		System.out.println("¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡");
+		System.out.printf("ì´ì  : %3d\n", total);
+		System.out.printf("í‰ê·  : %6.2f\n", avg);
+		System.out.println("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€");
 		
 	}
 
-	// ¸Ş´ºÀÔ·ÂÇÔ¼ö´Â ¸®ÅÏ°ªÀÌ ÀÖ´Â ÇÔ¼öÀÌ¹Ç·Î ¸®ÅÏ°ªÀÇ Çü½ÄÀ» ½áÁà¾ß ÇÑ´Ù. 
+	// ë©”ë‰´ì…ë ¥í•¨ìˆ˜ëŠ” ë¦¬í„´ê°’ì´ ìˆëŠ” í•¨ìˆ˜ì´ë¯€ë¡œ ë¦¬í„´ê°’ì˜ í˜•ì‹ì„ ì¨ì¤˜ì•¼ í•œë‹¤. 
 	static int inputMenu() {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		// ¸Ş´º ÇÔ¼ö
-		System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-		System.out.println("¦¢      ¸Ş´º        ¦¢");
-		System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+		// ë©”ë‰´ í•¨ìˆ˜
+		System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+		System.out.println("â”‚      ë©”ë‰´        â”‚");
+		System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
 		
-		System.out.println("1. ¼ºÀûÀÔ·Â");
-		System.out.println("2. ¼ºÀûÃâ·Â");
-		System.out.println("3. Á¾·á");
+		System.out.println("1. ì„±ì ì…ë ¥");
+		System.out.println("2. ì„±ì ì¶œë ¥");
+		System.out.println("3. ì¢…ë£Œ");
 		
 		System.out.print("> ");
 		int menu = scan.nextInt();

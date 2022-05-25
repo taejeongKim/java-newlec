@@ -3,8 +3,8 @@ package ex17.practice;
 public class P11_array5 {
 
 	public static void main(String[] args) {
-		// ¹è¿­¿¡¼­ Ç×¸ñ ±³È¯ÇÏ±â
-		// ¾Æ·¡¿¡¼­ 5¿Í 7À» ±³È¯ÇÏ¶ó.
+		// ë°°ì—´ì—ì„œ í•­ëª© êµí™˜í•˜ê¸°
+		// ì•„ë˜ì—ì„œ 5ì™€ 7ì„ êµí™˜í•˜ë¼.
 
 		int[] nums = { 5, 2, 7, 4, 6, 1, 3 };
 

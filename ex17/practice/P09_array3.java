@@ -3,7 +3,6 @@ package ex17.practice;
 public class P09_array3 {
 
 	public static void main(String[] args) {
-		// 배열 합치기
 
 		int[] nums1 = { 1, 2, 3 };
 		int[] nums2 = { 4, 5, 6 };

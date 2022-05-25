@@ -3,26 +3,26 @@ package ex17.practice;
 public class P05_omok2 {
 	public static void main(String[] args) {
 
-		// ¿À¸ñÆÇ ±×¸®±â
+		// ì˜¤ëª©íŒ ê·¸ë¦¬ê¸°
 
 		for (int j = 0; j < 10; j++) {
 			for (int i = 0; i < 10; i++)
-				System.out.printf("%c", '¦«');
+				System.out.printf("%c", 'â”¼');
 			System.out.println();
 
 		}
 		
 		System.out.println();
-		// x=4 y=3 ÁöÁ¡¿¡ °ËÀº µ¹ ³õ±â
+		// x=4 y=3 ì§€ì ì— ê²€ì€ ëŒ ë†“ê¸°
 
 		for (int y = 1; y <= 10; y++) {
 
 			for (int x = 1; x <= 10; x++) {
 
 				if (x == 4 && y == 3)
-					System.out.printf("%c", '¡Ü');
+					System.out.printf("%c", 'â—');
 				else
-					System.out.printf("%c", '¦«');
+					System.out.printf("%c", 'â”¼');
 			}
 
 			System.out.println();

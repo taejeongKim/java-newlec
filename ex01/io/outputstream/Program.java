@@ -4,13 +4,13 @@ public class Program {
 
 	public static void main(String[] args) {
 		
-		// '3'Àº ¹®ÀÚ3¿¡ ÇØ´çÇÏ´Â ¹®ÀÚÇ¥¸¦ ¹İÈ¯ÇÑ´Ù.
+		// '3'ì€ ë¬¸ì3ì— í•´ë‹¹í•˜ëŠ” ë¬¸ìí‘œë¥¼ ë°˜í™˜í•œë‹¤.
 		System.out.write('3'+1); 
 		System.out.write('3'+2);
 		System.out.write('3'+3);
 		System.out.write('3'+4);
 		
-		// outputstream ¹öÆÛ¿¡ ´ã±ä °ÍÀ» ³»º¸³½´Ù.
+		// outputstream ë²„í¼ì— ë‹´ê¸´ ê²ƒì„ ë‚´ë³´ë‚¸ë‹¤.
 		System.out.flush();  
 		
 	}

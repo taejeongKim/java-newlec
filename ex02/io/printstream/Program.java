@@ -13,16 +13,16 @@ public class Program {
 		total = kor1 + kor2 + kor3;
 		avg = total / 3;
 
-		// -------------- ¼ºÀû Ãâ·Â ºÎºĞ ----------------------
-		System.out.print("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-		System.out.print("¦¢      ¼ºÀûÃâ·Â       ¦¢");
-		System.out.print("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
-		System.out.print("±¹¾î1 : 0");
-		System.out.print("±¹¾î2 : 0");
-		System.out.print("±¹¾î3 : 0");
-		System.out.print("ÃÑÁ¡ : 0");
-		System.out.print("Æò±Õ : 0");
-		System.out.print("¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡");
+		// -------------- ì„±ì  ì¶œë ¥ ë¶€ë¶„ ----------------------
+		System.out.print("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+		System.out.print("â”‚      ì„±ì ì¶œë ¥       â”‚");
+		System.out.print("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
+		System.out.print("êµ­ì–´1 : 0");
+		System.out.print("êµ­ì–´2 : 0");
+		System.out.print("êµ­ì–´3 : 0");
+		System.out.print("ì´ì  : 0");
+		System.out.print("í‰ê·  : 0");
+		System.out.print("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€");
 
 	}
 }

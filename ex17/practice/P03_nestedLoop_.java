@@ -7,7 +7,7 @@ public class P03_nestedLoop_ {
 		 * 4 5 6 
 		 * 7 8 9
 		 * 
-		 * À§¿Í °°Àº °á°ú¹°À» ³ªÅ¸³» º¸ÀÚ.
+		 * ìœ„ì™€ ê°™ì€ ê²°ê³¼ë¬¼ì„ ë‚˜íƒ€ë‚´ ë³´ìž.
 		 * 
 		 */
 

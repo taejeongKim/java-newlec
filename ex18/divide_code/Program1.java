@@ -1,6 +1,6 @@
- /*
- * ÄÚµå ³ª´©±â ¿¬½À
- * ¸ŞÀÎÇÔ¼ö¿¡¼­ '¼ºÀûÀÔ·Â'ºÎºĞ¸¸ ¶¼¾î³»¾îº¸ÀÚ.
+/*
+ * ì½”ë“œ ë‚˜ëˆ„ê¸° ì—°ìŠµ
+ * ë©”ì¸í•¨ìˆ˜ì—ì„œ 'ì„±ì ì…ë ¥'ë¶€ë¶„ë§Œ ë–¼ì–´ë‚´ì–´ë³´ì.
  */
 
 package ex18.divide_code;
@@ -9,8 +9,8 @@ import java.util.Scanner;
 
 public class Program1 {
 	
-	// º¯¼ö¸¦ Àü¿ªÈ­(¸ğµç ÇÔ¼ö°¡ °øÀ¯)ÇÏ·Á¸é static (does not move or change) À» ºÙ¿©ÁØ´Ù.
-	// º¯¼öÀÇ static°ú ÇÔ¼öÀÇ staticÀº ÀÇ¹Ì°¡ ´Ù¸£´Ù.
+	// ë³€ìˆ˜ë¥¼ ì „ì—­í™”(ëª¨ë“  í•¨ìˆ˜ê°€ ê³µìœ )í•˜ë ¤ë©´ static (does not move or change) ì„ ë¶™ì—¬ì¤€ë‹¤.
+	// ë³€ìˆ˜ì˜ staticê³¼ í•¨ìˆ˜ì˜ staticì€ ì˜ë¯¸ê°€ ë‹¤ë¥´ë‹¤.
 	
 	static int[] kors = new int[3];
 	
@@ -25,19 +25,19 @@ public class Program1 {
 			kors[i] = 0;
 		}
 
-		Á¾·á:
+		ì¢…ë£Œ:
 		while (keepLoop) {
 
 			Scanner scan = new Scanner(System.in);
 
-			// -------------- ¸Ş´º ºÎºĞ -----------------
-			System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-			System.out.println("¦¢      ¸Ş´º        ¦¢");
-			System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+			// -------------- ë©”ë‰´ ë¶€ë¶„ -----------------
+			System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+			System.out.println("â”‚      ë©”ë‰´        â”‚");
+			System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
 			
-			System.out.println("1. ¼ºÀûÀÔ·Â");
-			System.out.println("2. ¼ºÀûÃâ·Â");
-			System.out.println("3. Á¾·á");
+			System.out.println("1. ì„±ì ì…ë ¥");
+			System.out.println("2. ì„±ì ì¶œë ¥");
+			System.out.println("3. ì¢…ë£Œ");
 			
 			System.out.print("> ");
 			menu = scan.nextInt();
@@ -46,40 +46,40 @@ public class Program1 {
 
 			case 1: 
 				
-				// -------------- ¼ºÀû ÀÔ·Â ºÎºĞ -----------------
-				¼ºÀûÀÔ·Â();
+				// -------------- ì„±ì  ì…ë ¥ ë¶€ë¶„ -----------------
+				ì„±ì ì…ë ¥();
 				
 				break;
 				
 			case 2:
 				
-				// -------------- ¼ºÀû Ãâ·Â ºÎºĞ -----------------
+				// -------------- ì„±ì  ì¶œë ¥ ë¶€ë¶„ -----------------
 				
 				total = kors[0] + kors[1] + kors[2];
 				avg = total / 3.0f; 
 				
-				System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-				System.out.println("¦¢      ¼ºÀûÃâ·Â    ¦¢");
-				System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+				System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+				System.out.println("â”‚      ì„±ì ì¶œë ¥    â”‚");
+				System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
 				
 				for (int i = 0; i < 3; i++) {
-					System.out.printf("±¹¾î%d : %3d\n", i + 1, kors[i]);
+					System.out.printf("êµ­ì–´%d : %3d\n", i + 1, kors[i]);
 					
 				}
 				
-				System.out.printf("ÃÑÁ¡ : %3d\n", total);
-				System.out.printf("Æò±Õ : %6.2f\n", avg);
-				System.out.println("¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡");
+				System.out.printf("ì´ì  : %3d\n", total);
+				System.out.printf("í‰ê·  : %6.2f\n", avg);
+				System.out.println("â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€");
 				
 				break;
 				
 			case 3: 
 				
-				break Á¾·á;
+				break ì¢…ë£Œ;
 
 			default:
 				
-				System.out.println("ÀÔ·Â¿À·ù, 1~3¹ø±îÁö¸¸ ÀÔ·ÂÇÒ ¼ö ÀÖ½À´Ï´Ù.");
+				System.out.println("ì…ë ¥ì˜¤ë¥˜, 1~3ë²ˆê¹Œì§€ë§Œ ì…ë ¥í•  ìˆ˜ ìˆìŠµë‹ˆë‹¤.");
 				break;
 			
 			}
@@ -88,22 +88,22 @@ public class Program1 {
 		System.out.println("Good-bye~");
 	}
 	
-	static void ¼ºÀûÀÔ·Â() {
+	static void ì„±ì ì…ë ¥() {
 		
-		// -------------- ¼ºÀû ÀÔ·Â ÇÔ¼ö -----------------
+		// -------------- ì„±ì  ì…ë ¥ í•¨ìˆ˜ -----------------
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-		System.out.println("¦¢      ¼ºÀûÀÔ·Â    ¦¢");
-		System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+		System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
+		System.out.println("â”‚      ì„±ì ì…ë ¥    â”‚");
+		System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
 		
 		for (int i=0; i<3; i++)
 			do {
-				System.out.printf("±¹¾î%d : ", i+1);
+				System.out.printf("êµ­ì–´%d : ", i+1);
 				kors[i] = scan.nextInt();
 				if (kors[i] < 0 || 100 < kors[i])
-					System.out.println("À¯È¿ÇÑ ¹üÀ§(0~100)¸¦ ³Ñ¾î°¬½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
+					System.out.println("ìœ íš¨í•œ ë²”ìœ„(0~100)ë¥¼ ë„˜ì–´ê°”ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
 			} while (kors[i] < 0 || 100 < kors[i]);
 		
 	}

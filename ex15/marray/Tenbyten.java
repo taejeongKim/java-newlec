@@ -3,7 +3,7 @@ package ex15.marray;
 public class Tenbyten {
 
 	public static void main(String[] args) {
-		// 10 x 10 ·£´ø Á¤¼ö table ¸¸µé±â
+		// 10 x 10 Â·Â£Â´Ã¸ ÃÂ¤Â¼Ã¶ table Â¸Â¸ÂµÃ©Â±Ã¢
 		
 		int N = 10;
 		int[][] arr = new int[N][N];

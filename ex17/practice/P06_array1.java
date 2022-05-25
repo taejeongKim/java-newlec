@@ -3,21 +3,21 @@ package ex17.practice;
 public class P06_array1 {
 
 	public static void main(String[] args) {
-		// array Á¤ÀÇ ¹× ÃÊ±âÈ­
+		// array ì •ì˜ ë° ì´ˆê¸°í™”
 		
-		// Á¤ÀÇ
+		// ì •ì˜
 		int[] arr = new int[7];
 		
-		int arr2[] = new int[7]; // old style, ¾²Áö ¾Ê´Â ÆíÀÌ ÁÁ´Ù.
+		int arr2[] = new int[7]; // old style, ì“°ì§€ ì•ŠëŠ” í¸ì´ ì¢‹ë‹¤.
 		
-		// ÃÊ±âÈ­
+		// ì´ˆê¸°í™”
 		for (int i=0; i<7; i++) {
 			arr[i] = i + 1;
 			arr2[i] = i + 1;
 		}
 		
-		int[] arr3 = new int[] {1,2,3,4,5,6,7}; // Á» Àü±îÁö ÀÌ·¸°Ô ´Ù ÇßÁö¸¸..
-		int[] arr4 = {1,2,3,4,5,6,7}; // Áö±İ ´ëºÎºĞ ÀÌ·¸°Ô ÃÊ±âÈ­ ÇÑ´Ù.
+		int[] arr3 = new int[] {1,2,3,4,5,6,7}; // ì¢€ ì „ê¹Œì§€ ì´ë ‡ê²Œ ë‹¤ í–ˆì§€ë§Œ..
+		int[] arr4 = {1,2,3,4,5,6,7}; // ì§€ê¸ˆ ëŒ€ë¶€ë¶„ ì´ë ‡ê²Œ ì´ˆê¸°í™” í•œë‹¤.
 		
 		System.out.print("arr1\t arr2\t arr3\n");
 		for (int i=0; i<7; i++) {

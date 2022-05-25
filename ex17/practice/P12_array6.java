@@ -5,8 +5,8 @@ import java.util.Random;
 public class P12_array6 {
 
 	public static void main(String[] args) {
-		// ·£´ı°ª Ã¤¿ì±â
-		// ·Î¶Ç ¹øÈ£¸¦ ¸¸µé¾î º¸¶ó. 1~45¹øÈ£ 6°³
+		// ëœë¤ê°’ ì±„ìš°ê¸°
+		// ë¡œë˜ ë²ˆí˜¸ë¥¼ ë§Œë“¤ì–´ ë³´ë¼. 1~45ë²ˆí˜¸ 6ê°œ
 
 		Random rand = new Random();
 
