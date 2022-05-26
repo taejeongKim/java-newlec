@@ -1,4 +1,5 @@
 package ex04.io.printf;
+
 public class Program {
 	public static void main(String[] args) {
 
@@ -12,8 +13,8 @@ public class Program {
 
 		total = kor1 + kor2 + kor3;
 		// 정수를 정수로 나누면 정수가된다. 이를 float로 변환하면 소수자리는 모두 0처리된다.
-		// 2가지 옵션. 
-		// avg = (float)(total / 3.0);  // double 을 float로 형변환
+		// 2가지 옵션.
+		// avg = (float)(total / 3.0); // double 을 float로 형변환
 		avg = total / 3.0f; // 처음부터 float으로 나눠줌.
 		System.out.println("┌──────────────────┐");
 		System.out.println("│      성적출력       │");
@@ -26,7 +27,6 @@ public class Program {
 		// 정수를 정수로 나누면 정수가된다. 이를 float로 변환하면 소수자리는 모두 0처리된다.
 		System.out.printf("평균 : %6.2f\n", avg);
 		System.out.println("────────────────────");
-	
-		
+
 	}
 }
