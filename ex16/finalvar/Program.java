@@ -1,5 +1,12 @@
 /*
  * 상수형 변수
+ * 
+문제)
+case문의 1, 2 등 숫가 의미하는 것이 뭔지 불명확하다. 
+
+task 9)
+1. case문의 라벨(label)을 상수형 변수로 변경하라.
+2. 학년수, 과목수를 상수형 변수로 변경하라.
  */
 
 package ex16.finalvar;
@@ -56,31 +63,6 @@ public class Program {
 				System.out.println("│      성적입력       │");
 				System.out.println("└──────────────────┘");
 				
-				
-				// do while 문 반복을 for문으로 ... array 사용
-				/*
-				do {
-					System.out.print("국어1 : ");
-					kor1 = scan.nextInt();
-					if (kor1 < 0 || 100 < kor1)
-						System.out.println("유효한 범위(0~100)를 넘어갔습니다. 다시 입력해 주세요.");
-				} while (kor1 < 0 || 100 < kor1);
-				
-				do {
-					System.out.print("국어2 : ");
-					kor2 = scan.nextInt();
-					if (kor2 < 0 || 100 < kor2)
-						System.out.println("유효한 범위(0~100)를 넘어갔습니다. 다시 입력해 주세요.");
-				} while (kor2 < 0 || 100 < kor2);
-				
-				do {
-					System.out.print("국어3 : ");
-					kor3 = scan.nextInt();
-					if (kor3 < 0 || 100 < kor3)
-						System.out.println("유효한 범위(0~100)를 넘어갔습니다. 다시 입력해 주세요.");
-				} while (kor3 < 0 || 100 < kor3);
-				*/
-				
 				for (int i=0; i<N; i++)
 					do {
 						System.out.printf("국어%d : ", i+1);
@@ -89,7 +71,6 @@ public class Program {
 							System.out.println("유효한 범위(0~100)를 넘어갔습니다. 다시 입력해 주세요.");
 					} while (kors[i] < 0 || 100 < kors[i]);
 									
-				
 				break;
 				
 			// label

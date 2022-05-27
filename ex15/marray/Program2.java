@@ -1,6 +1,7 @@
 /*
- * 학년별 국어점수를 알아보자. 즉 아래와 같이 출력되면 된다.
- * data가 다층적이 되었다. 다차원 배열을 사용해야 한다.
+task 8)
+ * 아래와 같이 학년별 국어점수를 알아보자. 
+ * 3학년 까지만 한다.
  * <1학년 국어성적>
  * 국어1 : 23
  * 국어2 : 33
@@ -64,31 +65,7 @@ public class Program2 {
 				System.out.println("│      성적입력       │");
 				System.out.println("└──────────────────┘");
 				
-				
-				// do while 문 반복을 for문으로 ... array 사용
-				/*
-				do {
-					System.out.print("국어1 : ");
-					kor1 = scan.nextInt();
-					if (kor1 < 0 || 100 < kor1)
-						System.out.println("유효한 범위(0~100)를 넘어갔습니다. 다시 입력해 주세요.");
-				} while (kor1 < 0 || 100 < kor1);
-				
-				do {
-					System.out.print("국어2 : ");
-					kor2 = scan.nextInt();
-					if (kor2 < 0 || 100 < kor2)
-						System.out.println("유효한 범위(0~100)를 넘어갔습니다. 다시 입력해 주세요.");
-				} while (kor2 < 0 || 100 < kor2);
-				
-				do {
-					System.out.print("국어3 : ");
-					kor3 = scan.nextInt();
-					if (kor3 < 0 || 100 < kor3)
-						System.out.println("유효한 범위(0~100)를 넘어갔습니다. 다시 입력해 주세요.");
-				} while (kor3 < 0 || 100 < kor3);
-				*/
-				
+							
 				for (int j=0; j<3; j++) {
 					
 					for (int i=0; i<3; i++)

@@ -1,5 +1,11 @@
-package ex04.io.printf;
+/*
+ * 첫 코드
+ * task 1) 성적 출력하라.
+ * - 국어 성적 3개
+ * - total, avg 를 보여준다.
+ * */
 
+package ex04.io.printf;
 public class Program {
 	public static void main(String[] args) {
 

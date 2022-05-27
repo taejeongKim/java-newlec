@@ -1,8 +1,11 @@
+/*
+구조체 배열 
+*/
 package ex20.data_structure;
 
 import java.util.Scanner;
 
-public class Program {
+public class Program2 {
 
 	public static void main(String[] args) {
 
@@ -55,6 +58,7 @@ public class Program {
 			// 변수는 함수가 호출될 깨 한번만 선언이 됨.
 			int total;
 			float avg;
+			// 임시변수 사용.
 			Exam exam = exams[i];
 
 			total = exam.kor + exam.eng + exam.math;

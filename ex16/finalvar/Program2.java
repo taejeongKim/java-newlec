@@ -1,8 +1,8 @@
-package test;
+package ex16.finalvar;
 
 import java.util.Scanner;
 
-public class Test {
+public class Program2 {
 	public static void main(String[] args) {
 		
 		final int M = 6; // 학년수

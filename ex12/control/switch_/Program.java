@@ -1,7 +1,11 @@
 /*
- * switch문, label 문을 사용해 보자!!!
- * break문을 사용해 보자!
- */
+문제)
+1. else if 문을 사용하면 불필요한 조건 검사를 필할 수 없다.
+즉, 뒤에 있는 조건이 참일 경우 그 이전의 모든 조건식을 거쳐야 한다.
+
+task 6)
+1. switch문, label 문을 사용해 보자!!!
+*/
 
 package ex12.control.switch_;
 
