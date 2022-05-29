@@ -1,5 +1,7 @@
 /*
 구조체 배열 
+1. 여기서 구조체란 구조화된 data를 말함.
+2. 자바에서는 클래스를 구조체로 사용함.
 */
 package ex20.data_structure;
 
@@ -9,8 +11,9 @@ public class Program2 {
 
 	public static void main(String[] args) {
 
+		final int C = 5; // number of class
 		//구조체 배열 사용
-		Exam[] exams = new Exam[3];
+		Exam[] exams = new Exam[C];
 		int menu;
 		boolean keepLoop = true;
 
@@ -52,25 +55,29 @@ public class Program2 {
 		System.out.println("│      성적출력    │");
 		System.out.println("└──────────────────┘");
 
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < exams.length; i++) {
 			// for문 안의 변수 선언
 			// for 루프를 돌면서 불필요하게 변수 선언이 반복되는 것이 아님.
-			// 변수는 함수가 호출될 깨 한번만 선언이 됨.
+			// 변수는 함수가 호출될 때 한번만 선언이 됨.
 			int total;
 			float avg;
+			
 			// 임시변수 사용.
 			Exam exam = exams[i];
 
 			total = exam.kor + exam.eng + exam.math;
 			avg = total / 3.0f;
-
+			
+			System.out.printf("---%d반 성적---\n", i+1);
+			
 			System.out.printf("국어 : %3d\n", exam.kor);
 			System.out.printf("영어 : %3d\n", exam.eng);
 			System.out.printf("수학 : %3d\n", exam.math);
 
 			System.out.printf("총점 : %3d\n", total);
 			System.out.printf("평균 : %6.2f\n", avg);
-			System.out.println("────────────────────");
+			
+			System.out.println();
 		}
 	}
 
@@ -81,10 +88,12 @@ public class Program2 {
 		System.out.println("│      성적입력    │");
 		System.out.println("└──────────────────┘");
 
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < exams.length; i++) {
 			
 			int kor, eng, math;
-
+			
+			System.out.printf("---%d반 성적---\n", i+1);
+			
 			do {
 				System.out.printf("국어 : ");
 				kor = scan.nextInt();
@@ -114,6 +123,8 @@ public class Program2 {
 			exam.math = math;
 			
 			exams[i] = exam;
+			
+			
 		}
 	}
 

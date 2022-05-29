@@ -1,21 +1,19 @@
 package test;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Temp {
 
 	public static void main(String[] args) {
-	
-		int[][] scores = new int[][] {{2,3,4},{2,3,4},{2,3,4}};
-//		int[][] scores = {{2,3,4},{2,3,4},{2,3,4}};
+
+//		Exam[] exams = new Exam[3];
 		
-		for (int i=0; i<scores.length; i++) {
-			for (int j=0; j<scores[i].length; j++) {
-				System.out.print(scores[i][j] + " ");
-			}
-			System.out.println();
-		}
+		Exam[] exams = {new Exam(), new Exam(), new Exam()};
+		
+		exams[0].kor = 30;
+		System.out.println(exams[0].kor);
+		System.out.println(exams[1].kor);
+
 		
 	}
-
 }

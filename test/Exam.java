@@ -1,7 +1,8 @@
 package test;
 
 public class Exam {
-	int kor;
-	int eng;
-	int math;
+	int kor, eng, math;
+//	int eng;
+//	int math;
 }
+
