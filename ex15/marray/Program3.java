@@ -16,9 +16,9 @@ public class Program3 {
 		int[][] scores = new int[C][S];
 		String[] subject = {"국어","영어","수학"};
 		boolean running = true;
-		final int NEMU_INPUT = 1; // 성적입력
-		final int NEMU_OUTPUT = 2;// 성적출력
-		final int NEMU_EXIT = 3;// 종료
+		final int MENU_INPUT = 1; // 성적입력
+		final int MENU_OUTPUT = 2;// 성적출력
+		final int MENU_EXIT = 3;// 종료
 		
 		while(running) {
 			
@@ -28,17 +28,17 @@ public class Program3 {
 			
 			switch(menu) {
 			
-			case NEMU_INPUT:
+			case MENU_INPUT:
 
 				inputScore(scores, subject);
 				break;
 				
-			case NEMU_OUTPUT:
+			case MENU_OUTPUT:
 
 				printScore(scores, subject);
 				break;
 				
-			case NEMU_EXIT:
+			case MENU_EXIT:
 				
 				System.out.println("Good bye ~");
 				running = false;
