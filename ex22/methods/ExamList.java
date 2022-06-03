@@ -1,71 +1,26 @@
-/*
-<task>
-3칸짜리 구조체 배열을 사용하되, 입력이 가변이라 가정하라..
-즉, 1개가 입력될 수도 있고 3개 이상이 입력될 수도 있다.... ?????
-어떻게하면 가변적인 입력에 대응할 수 있는가?
-
-<solution>
-1. 반복문을 없애고 1번도 입력하고 끝낼 수 있도록 한다.
-2. 몇번 입력했는지 index로 추적하고
-3. index만큼 출력한다.
-
-<problem>
-1. index를 함수간에 공유할 수가 없다.
-*/
-package ex20.data_structure;
+package ex22.methods;
 
 import java.util.Scanner;
 
-public class Program3 {
+public class ExamList {
 
-	public static void main(String[] args) {
+	Exam[] exams;
+	int current;
 
-		//구조체 배열 사용
-		Exam[] exams = new Exam[3];
-		int menu;
-		boolean keepLoop = true;
-		// 입력한 횟수를 나타내는 index
-		int current = 0;
-
-		while (keepLoop) {
-
-			// 메뉴함수는 menu를 리턴해줘야 한다.
-			menu = inputMenu();
-
-			switch (menu) {
-
-			case 1:
-				// 매개변수로 구조체(객체)의 리스트만 넘긴다. 리스트에는 아직 객체가 없다.
-				// inputList에서 객체를 만들어 리스트에 채워야 한다.
-				inputList(exams, current);
-				break;
-
-			case 2:
-				// inputList에서 객체 리스트에 객체를 담았으니 객체와 연결된 리스트가 전달됨.
-				printList(exams, current);
-				break;
-
-			case 3:
-				System.out.println("Good-bye~");
-				keepLoop = false;
-//				break 종료;
-				break;
-
-			default:
-				System.out.println("입력오류, 1~3번까지만 입력할 수 있습니다.");
-				break;
-
-			}
-		}
+	static void printList(ExamList list) {
+		// 코드 집중화
+		// 오버로드함수가 있을 경우 한 곳만 수정하면 모두 반영하도록 한다.
+		printList(list, list.current);
 	}
-
-	private static void printList(Exam[] exams, int size) {
+	
+	// overload함수
+	static void printList(ExamList list, int size) {
 
 		System.out.println("┌──────────────────┐");
 		System.out.println("│      성적출력    │");
 		System.out.println("└──────────────────┘");
 
-
+//		int size = list.current;
 		for (int i = 0; i < size; i++) {
 			// for문 안의 변수 선언
 			// for 루프를 돌면서 불필요하게 변수 선언이 반복되는 것이 아님.
@@ -74,7 +29,7 @@ public class Program3 {
 			float avg;
 			
 			// 임시변수 사용.
-			Exam exam = exams[i];
+			Exam exam = list.exams[i];
 
 			total = exam.kor + exam.eng + exam.math;
 			avg = total / 3.0f;
@@ -92,7 +47,7 @@ public class Program3 {
 		}
 	}
 
-	private static void inputList(Exam[] exams, int current) {
+	static void inputList(ExamList list) {
 		Scanner scan = new Scanner(System.in);
 
 		System.out.println("┌──────────────────┐");
@@ -131,27 +86,27 @@ public class Program3 {
 			exam.eng = eng;
 			exam.math = math;
 			
-			exams[current] = exam;
-			current++;
+			Exam[] exams = list.exams;
+			int size = list.current;
+			
+			if (exams.length == size) {
+				// 1. 새로운 배열 생성
+				Exam[] temp = new Exam[exams.length + 5];
+				// 2. 값 이주시키기
+				for (int i=0; i<size; i++)
+					temp[i] = exams[i];
+				// 3. 연결 객체 바꾸기
+				list.exams = temp;
+			}
+			
+			list.exams[list.current] = exam;
+			list.current++;
 	}
 
-	static int inputMenu() {
-
-		Scanner scan = new Scanner(System.in);
-
-		// 메뉴 함수
-		System.out.println("┌──────────────────┐");
-		System.out.println("│      메뉴        │");
-		System.out.println("└──────────────────┘");
-
-		System.out.println("1. 성적입력");
-		System.out.println("2. 성적출력");
-		System.out.println("3. 종료");
-
-		System.out.print("> ");
-		int menu = scan.nextInt();
+	public static void init(ExamList list) {
+		list.exams = new Exam[3];
+		list.current = 0;
 		
-		return menu;
 	}
 
 }

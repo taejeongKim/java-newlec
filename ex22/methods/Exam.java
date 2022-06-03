@@ -1,6 +1,5 @@
-package ex20.data_structure;
-// data structure
-
+package ex22.methods;
+// data class, data structure
 public class Exam {
 	int kor;
 	int eng;
