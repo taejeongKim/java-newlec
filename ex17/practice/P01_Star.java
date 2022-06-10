@@ -1,5 +1,5 @@
 /*
- * 별 10개 찍기
+ * 별  찍기
  */
 
 package ex17.practice;

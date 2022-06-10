@@ -1,5 +1,7 @@
 /* 구조체를 이용한 코드 작성하기
-1. 구조체(data class)를 활용한다.
+ * 
+[task]
+1. 관리해야할 과목이 국어,영어,수학으로 늘어났다.
 2. 기존 국어성적 관리프로그램을 응용한다.
 <결과>
 ┌──────────────────┐
@@ -38,10 +40,16 @@ public class Program1 {
 
 	private static void print(Exam exam) {
 		
+		System.out.println("┌──────────────────┐");
+		System.out.println("│      성적출력    │");
+		System.out.println("└──────────────────┘");
+		
 		int total;
 		float avg;
 		
 		// 임시변수를 활용하면 코드가 간결해진다.
+		// 연산은 줄이는 것이 좋다.
+		
 		int kor = exam.kor;
 		int eng = exam.eng;
 		int math = exam.math;
@@ -49,26 +57,22 @@ public class Program1 {
 		total = kor + eng + math;
 		avg = total / 3.0f; 
 		
-		System.out.println("┌──────────────────┐");
-		System.out.println("│      성적출력    │");
-		System.out.println("└──────────────────┘");
-		
-		System.out.printf("국어 : %3d\n", kor);
-		System.out.printf("영어 : %3d\n", eng);
-		System.out.printf("수학 : %3d\n", math);
+		System.out.printf("국어 : %d\n", kor);
+		System.out.printf("영어 : %d\n", eng);
+		System.out.printf("수학 : %d\n", math);
 			
-		System.out.printf("총점 : %3d\n", total);
-		System.out.printf("평균 : %6.2f\n", avg);
+		System.out.printf("총점 : %d\n", total);
+		System.out.printf("평균 : %.2f\n", avg);
 		System.out.println("────────────────────");
 	}
 
 	private static void input(Exam exam) {
-		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("┌──────────────────┐");
 		System.out.println("│      성적입력    │");
 		System.out.println("└──────────────────┘");
 		
+		Scanner scan = new Scanner(System.in);
 		int kor,eng, math;
 		
 		do {

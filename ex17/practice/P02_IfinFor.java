@@ -28,14 +28,14 @@ public class P02_IfinFor {
 		System.out.println("---------------");
 		
 		// A,B,C,D,E, 에서 마지막 콤마(,)삭제
-		// 홀수번째 숫자 빈칸 처리
+		// 짝수번째 숫자 빈칸 처리
 		
 		for (int i = 0; i < 5; i++)
 			// if문 중 상위에 있는 것이 보다 특별한 경우, 드문 경우이
 			if (i==4) 	
 				System.out.printf("%c", 'A'+i);
 			else if (i%2==0)
-				System.out.printf("%c, ", ' ');
+				System.out.print(" ");
 			else  		
 				System.out.printf("%c, ", 'A'+i);
 	}
