@@ -28,7 +28,6 @@
     <fullyQualifiedTypeName name="ex21.encapsulation.ExamList"/>
     <fullyQualifiedTypeName name="ex21.encapsulation.Exam"/>
     <fullyQualifiedTypeName name="test.TestProgram"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="ex22.methods.ExamList"/>
     <fullyQualifiedTypeName name="test2.ExamList"/>
     <fullyQualifiedTypeName name="ex23.encapsulation_final.ExamList"/>
@@ -39,4 +38,12 @@
     <fullyQualifiedTypeName name="ex25.inheritance.NewlecExam"/>
     <fullyQualifiedTypeName name="java.awt.Frame"/>
     <fullyQualifiedTypeName name="myPackage.GameFrame"/>
+    <fullyQualifiedTypeName name="ex25.inheritance.Exam"/>
+    <fullyQualifiedTypeName name="temp.ExamConsole"/>
+    <fullyQualifiedTypeName name="temp.LingoviExamConsole"/>
+    <fullyQualifiedTypeName name="temp.LingoviExam"/>
+    <fullyQualifiedTypeName name="temp.Program"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="ex27.interface_.Program"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

@@ -1,4 +1,0 @@
-module OOPjavaPjt {
-	requires java.desktop;
-
-}
