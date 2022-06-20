@@ -1,0 +1,143 @@
+package test;
+
+import java.util.Scanner;
+
+import ex20.data_structure.Exam;
+import ex20.data_structure.ExamList;
+
+public class TestProgram {
+
+
+	public static void main(String[] args) {
+
+		ExamList list = new ExamList();
+		list.exams = new Exam[3];
+		list.current = 0;
+		boolean running = true;
+
+		while (running) {
+
+			int menu = selectMenu();
+
+			switch (menu) {
+
+			case 1:
+
+				inputExam(list);
+				break;
+
+			case 2:
+
+				printExam(list);
+				break;
+
+			case 3:
+
+				System.out.println("Good bye ~");
+				running = false;
+				break;
+
+			default:
+				System.out.println("input again!");
+				break;
+			}
+		}
+	}
+
+	static int selectMenu() {
+		int menu;
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("--- 메뉴 ---");
+		System.out.println("1. 성적입력");
+		System.out.println("2. 성적출력");
+		System.out.println("3. 종료");
+		System.out.print("> ");
+
+		menu = scan.nextInt();
+		return menu;
+	}
+
+	static void printExam(ExamList list) {
+		printExam(list, list.current);
+		
+	}
+	
+	static void printExam(ExamList list, int current) {
+
+		int total;
+		float avg;
+		Exam[] exams = list.exams;
+
+		System.out.println("--- 결과 ---");
+
+		for (int i=0; i<current; i++) {
+			
+			System.out.printf("%d반 성적\n", i+1);
+			
+			System.out.printf("%s = %d\n", "국어", exams[i].kor);
+			System.out.printf("%s = %d\n", "영어", exams[i].eng);
+			System.out.printf("%s = %d\n", "수학", exams[i].math);
+			
+			total = exams[i].kor + exams[i].eng + exams[i].math;
+			avg = total / 3.0f;
+			
+			System.out.printf("합계 : %d\n", total);
+			System.out.printf("평균 : %.2f\n", avg);
+			System.out.println();
+			
+		}
+
+	}
+
+	static void inputExam(ExamList list) {
+		// 성적 입력
+		Scanner scan = new Scanner(System.in);
+		Exam[] exams = list.exams;
+		int current = list.current;
+			
+			System.out.printf("%d반 성적\n", current+1);
+			int kor, eng, math;
+			
+			do {
+				System.out.printf("%s > ", "국어");
+				kor = scan.nextInt();
+				if (kor < 0 || 100 < kor)
+					System.out.println("out of range!!");
+			} while (kor < 0 || 100 < kor);
+			
+			do {
+				System.out.printf("%s > ", "영어");
+				eng = scan.nextInt();
+				if (eng < 0 || 100 < eng)
+					System.out.println("out of range!!");
+			} while (eng < 0 || 100 < eng);
+			
+			do {
+				System.out.printf("%s > ", "수학");
+				math = scan.nextInt();
+				if (math < 0 || 100 < math)
+					System.out.println("out of range!!");
+			} while (math < 0 || 100 < math);
+			
+			
+			if (exams.length == current) {
+				Exam[] temp = new Exam[current + 5];
+				for (int i=0; i<current; i++) 
+					temp[i] = exams[i];
+				exams = temp;
+			}
+			
+			exams[current] = new Exam();
+			
+			exams[current].kor = kor;
+			exams[current].eng = eng;
+			exams[current].math = math;
+			
+			System.out.println();
+			
+			list.exams = exams;
+			list.current++;
+	}
+}

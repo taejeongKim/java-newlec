@@ -1,0 +1,5 @@
+module OOPjavaPjt {
+	requires java.desktop;
+	requires examlib;
+
+}

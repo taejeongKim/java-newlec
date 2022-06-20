@@ -1,0 +1,13 @@
+package ex25.inheritance;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		NewlecExam newExam = new NewlecExam();
+		newExam.setCom(30);
+		int total = newExam.total();
+		System.out.println(total);
+	}
+
+}

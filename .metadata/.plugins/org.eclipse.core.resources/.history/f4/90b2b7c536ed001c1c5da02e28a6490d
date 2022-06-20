@@ -1,0 +1,12 @@
+package newlecExam;
+
+public class Program {
+
+	public static void main(String[] args) {
+		NewlecExam newlec = new NewlecExam(1,2,3,4);
+		int total = newlec.total();
+		System.out.println(total);
+
+	}
+
+}

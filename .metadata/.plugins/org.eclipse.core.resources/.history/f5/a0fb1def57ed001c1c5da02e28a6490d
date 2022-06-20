@@ -1,0 +1,25 @@
+package newlecExam;
+
+import ex25.abstraction.Exam;
+import ex25.abstraction.ExamConsole;
+
+public class NewlecExamConsole extends ExamConsole{
+
+	@Override
+	protected Exam makeExam() {
+		return new NewlecExam();
+	}
+
+	@Override
+	protected void onPrint(Exam exam) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	protected void onInput() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package ex25.inheritance;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		NewlecExam newExam = new NewlecExam();
+		newExam.total();
+	}
+
+}

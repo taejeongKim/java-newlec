@@ -1,0 +1,96 @@
+package test;
+
+import java.util.Scanner;
+
+public class TestProgram {
+
+
+	public static void main(String[] args) {
+
+		int[] scores = new int[3];
+		String[] subjects = {"국어","영어","수학"};
+		boolean running = true;
+
+		while (running) {
+
+			int menu = selectMenu();
+
+			switch (menu) {
+
+			case 1:
+
+				inputExam(scores, subjects);
+				break;
+
+			case 2:
+
+				printExam(scores, subjects);
+				break;
+
+			case 3:
+
+				System.out.println("Good bye ~");
+				running = false;
+				break;
+
+			default:
+				System.out.println("input again!");
+				break;
+			}
+		}
+	}
+
+	static int selectMenu() {
+		int menu;
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("--- 메뉴 ---");
+		System.out.println("1. 성적입력");
+		System.out.println("2. 성적출력");
+		System.out.println("3. 종료");
+		System.out.print("> ");
+
+		menu = scan.nextInt();
+		return menu;
+	}
+
+	static void printExam(int[] scores, String[] subjects) {
+
+		int total = 0;
+		float avg;
+
+		System.out.println("--- 결과 ---");
+
+		for (int i = 0; i < 3; i++) {
+			System.out.printf("%s = %d ", subjects[i], scores[i]);
+			total += scores[i];
+		}
+
+		avg = total / 3.0f;
+
+		System.out.printf("합계 : %d\n", total);
+		System.out.printf("평균 : %.2f\n", avg);
+		System.out.println();
+
+	}
+
+	static void inputExam(int[] scores, String[] subjects) {
+		// 성적 입력
+		Scanner scan = new Scanner(System.in);
+
+		int score;
+		for (int i = 0; i < 3; i++) {
+			do {
+				System.out.printf("%s > ", subjects[i]);
+				score = scan.nextInt();
+				if (score < 0 || 100 < score)
+					System.out.println("out of range!!");
+			} while (score < 0 || 100 < score);
+			
+			scores[i] = score;
+		}
+		System.out.println();
+
+	}
+}

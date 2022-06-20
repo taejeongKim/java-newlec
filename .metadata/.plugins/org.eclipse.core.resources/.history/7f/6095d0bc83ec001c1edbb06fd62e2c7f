@@ -1,0 +1,80 @@
+package test;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		int[] kors = new int[3];
+
+		int menu;
+		boolean running = true;
+		
+		while(running) {
+			Scanner scan = new Scanner(System.in);
+			
+			System.out.println("--- 메뉴 ---");
+			System.out.println("1. 성적입력");
+			System.out.println("2. 성적출력");
+			System.out.println("3. 종료");	
+			
+			System.out.print(">");
+			menu = scan.nextInt();
+			
+			switch(menu) {
+			case 1:
+				inputExam(kors);
+				break;
+			case 2:
+				printExam(kors);
+				break;
+			case 3:
+				running = false;
+				System.out.println("Good-bye ~~");
+				break;
+			default:
+				break;
+			}
+		}
+	}
+
+	private static void printExam(int[] kors) {
+		int total = 0;
+		float avg;
+		
+		for (int i=0; i<3; i++) {
+			total = kors[i];
+		}
+		
+		avg = total / 3.0f;
+		
+		for (int i=0; i<3; i++) {
+			System.out.printf("국어%d = %d\n", i+1, kors[i]);
+		}
+		System.out.printf("합계 = %d ", total);
+		System.out.printf("평균 = %.2f ", avg);
+		
+	}
+
+	private static void inputExam(int[] kors) {
+		Scanner scan = new Scanner(System.in);
+		
+		int kor1, kor2, kor3;
+		
+		System.out.print("국어1 > ");
+		kor1 = scan.nextInt();
+		
+		System.out.print("국어2 > ");
+		kor2 = scan.nextInt();
+		
+		System.out.print("국어3 > ");
+		kor3 = scan.nextInt();
+		
+		kors[0]=kor1;
+		kors[1]=kor2;
+		kors[2]=kor3;
+		
+	}
+
+}

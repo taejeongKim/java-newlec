@@ -1,0 +1,13 @@
+package drawing;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Line line = new Line(1,2);
+		System.out.println(line.getX());
+		System.out.println(line.getY());
+
+	}
+
+}

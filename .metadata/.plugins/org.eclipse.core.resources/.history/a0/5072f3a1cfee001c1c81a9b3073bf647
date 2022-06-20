@@ -1,0 +1,18 @@
+package test;
+
+import java.util.Scanner;
+
+import ex20.data_structure.Exam;
+
+public class Temp {
+
+	public static void main(String[] args) {
+		
+		Exam[] exams = new Exam[3];
+		exams[0] = new Exam();
+		
+		System.out.println(exams[0].eng);
+
+	}
+
+}

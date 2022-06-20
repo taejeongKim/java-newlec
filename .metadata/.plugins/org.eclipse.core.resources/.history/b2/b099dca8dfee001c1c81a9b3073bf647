@@ -1,0 +1,60 @@
+package test;
+
+import java.util.Scanner;
+
+import ex22.methods.ExamList;
+
+
+public class TestProgram {
+
+
+	public static void main(String[] args) {
+
+		ExamList list = new ExamList();
+		list.init();
+		boolean running = true;
+
+		while (running) {
+
+			int menu = selectMenu();
+
+			switch (menu) {
+
+			case 1:
+
+				list.inputList();
+				break;
+
+			case 2:
+
+				list.printList();
+				break;
+
+			case 3:
+
+				System.out.println("Good bye ~");
+				running = false;
+				break;
+
+			default:
+				System.out.println("input again!");
+				break;
+			}
+		}
+	}
+
+	static int selectMenu() {
+		int menu;
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("--- 메뉴 ---");
+		System.out.println("1. 성적입력");
+		System.out.println("2. 성적출력");
+		System.out.println("3. 종료");
+		System.out.print("> ");
+
+		menu = scan.nextInt();
+		return menu;
+	}
+}

@@ -1,0 +1,42 @@
+package test;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		int[] kors = new int[3];
+		int toal;
+		float avg;
+		int menu;
+		boolean running = true;
+		
+		종료:
+		while(running) {
+			Scanner scan = new Scanner(System.in);
+			
+			System.out.println("--- 메뉴 ---");
+			System.out.println("1. 성적입력");
+			System.out.println("2. 성적출력");
+			System.out.println("3. 종료");	
+			
+			System.out.print(">");
+			menu = scan.nextInt();
+			
+			switch(menu) {
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+//				running = false;
+				System.out.println("Good-bye ~~");
+				break 종료;
+			default:
+				break;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+package reuse;
+
+import ex24.ui_code_seperation.Exam;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Exam exam = new Exam();
+		NewlecExam newExam = new NewlecExam();
+		
+		Exam exam2 = new NewlecExam(1,1,1,1);
+
+		
+		System.out.println(exam2.total());
+		
+	}
+
+}

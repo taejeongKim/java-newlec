@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+D:\java-src\newlec\.metadata\.plugins\org.eclipse.jdt.core
+2671759319.index
+1839396771.index
+3962765981.index
+1067094681.index
+2420344924.index
+1865797976.index

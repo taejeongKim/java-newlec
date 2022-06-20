@@ -1,0 +1,10 @@
+package ex25.abstraction;
+
+public class NewlecExamConsole extends ExamConsole{
+
+	@Override
+	protected Exam makeExam() {
+		return new NewlecExam();
+	}
+
+}

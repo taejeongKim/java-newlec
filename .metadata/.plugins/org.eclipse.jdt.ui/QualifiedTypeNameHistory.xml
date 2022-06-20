@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.OutputStream"/>
+    <fullyQualifiedTypeName name="java.io.PrintStream"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="myPackage.Program"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="test.Exam"/>
+    <fullyQualifiedTypeName name="test.Test"/>
+    <fullyQualifiedTypeName name="reuse.NewlecExam"/>
+    <fullyQualifiedTypeName name="test.TjExam"/>
+    <fullyQualifiedTypeName name="ex25.abstraction.NewlecExam"/>
+    <fullyQualifiedTypeName name="ex25.abstraction.NewlecExamConsole"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="drawing.Shape"/>
+    <fullyQualifiedTypeName name="drawing.Circle"/>
+    <fullyQualifiedTypeName name="drawing.Line"/>
+    <fullyQualifiedTypeName name="drawing.Rect"/>
+    <fullyQualifiedTypeName name="test.ExamList"/>
+    <fullyQualifiedTypeName name="test.ExamConsole"/>
+    <fullyQualifiedTypeName name="ex24.ui_code_seperation.Exam"/>
+    <fullyQualifiedTypeName name="ex25.abstraction.Exam"/>
+    <fullyQualifiedTypeName name="ex25.abstraction.ExamConsole"/>
+    <fullyQualifiedTypeName name="newlecExam.NewlecExamConsole"/>
+    <fullyQualifiedTypeName name="newlecExam.NewlecExam"/>
+    <fullyQualifiedTypeName name="ex20.data_structure.Exam"/>
+    <fullyQualifiedTypeName name="ex20.data_structure.ExamList"/>
+    <fullyQualifiedTypeName name="ex21.encapsulation.ExamList"/>
+    <fullyQualifiedTypeName name="ex21.encapsulation.Exam"/>
+    <fullyQualifiedTypeName name="test.TestProgram"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="ex22.methods.ExamList"/>
+    <fullyQualifiedTypeName name="test2.ExamList"/>
+    <fullyQualifiedTypeName name="ex23.encapsulation_final.ExamList"/>
+    <fullyQualifiedTypeName name="ex23.encapsulation_final.ExamConsole"/>
+    <fullyQualifiedTypeName name="ex24.ui_code_seperation.ExamConsole"/>
+    <fullyQualifiedTypeName name="temp.Operation"/>
+    <fullyQualifiedTypeName name="temp.Circle"/>
+    <fullyQualifiedTypeName name="ex25.inheritance.NewlecExam"/>
+    <fullyQualifiedTypeName name="java.awt.Frame"/>
+    <fullyQualifiedTypeName name="myPackage.GameFrame"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,87 @@
+package test;
+
+import java.util.Scanner;
+
+public class ExamList {
+
+	Exam[] exams;
+	int current;
+	
+	public static void printExam(ExamList list) {
+		printExam(list, list.current);
+		
+	}
+	public static void printExam(ExamList list, int size) {
+
+//		int size = list.current;
+		for (int i=0; i<size; i++) {
+			
+			int total = 0;
+			float avg;
+			
+			System.out.printf("--- %d반 결과 ---\n", i+1);
+
+			Exam exam = list.exams[i];
+			
+			total = exam.kor + exam.eng + exam.math;
+			
+			avg = total / 3.0f;
+			
+			System.out.printf("국어 = %d\n", exam.kor);
+			System.out.printf("영어 = %d\n", exam.eng);
+			System.out.printf("수학 = %d\n", exam.math);
+			System.out.printf("합계 = %d\n", total);
+			System.out.printf("평균 = %.2f\n", avg);
+			System.out.println();
+		}
+	}
+
+	public static void inputExam(ExamList list) {
+
+			Scanner scan = new Scanner(System.in);
+			
+			int kor;
+			int eng;
+			int math;
+			
+			System.out.printf("--- %d반  ---\n", list.current+1);
+			
+			do {
+				System.out.printf("국어 : ");
+				kor = scan.nextInt();
+				if (kor < 0 || 100 < kor)
+					System.out.println("유효한 범위(0~100)를 넘어갔습니다. 다시 입력해 주세요.");
+			} while (kor < 0 || 100 < kor);
+			
+			do {
+				System.out.printf("영어 : ");
+				eng = scan.nextInt();
+				if (eng < 0 || 100 < eng)
+					System.out.println("유효한 범위(0~100)를 넘어갔습니다. 다시 입력해 주세요.");
+			} while (eng < 0 || 100 < eng);
+			
+			do {
+				System.out.printf("국어 : ");
+				math = scan.nextInt();
+				if (math < 0 || 100 < math)
+					System.out.println("유효한 범위(0~100)를 넘어갔습니다. 다시 입력해 주세요.");
+			} while (math < 0 || 100 < math);
+
+			Exam exam = new Exam();
+			exam.kor = kor;
+			exam.eng = eng;
+			exam.math = math;
+			
+			list.exams[list.current] = exam;
+			list.current++;
+			
+			System.out.println();
+		
+
+	}
+	public static void init(ExamList list) {
+		list.exams = new Exam[3];
+		list.current= 0;
+		
+	}
+}

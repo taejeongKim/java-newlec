@@ -1,0 +1,111 @@
+package test;
+
+import java.util.Scanner;
+
+public class Test {
+
+	static int current = 0;
+	public static void main(String[] args) {
+
+		Exam[] exams = new Exam[3];
+		int menu;
+		boolean running = true;
+
+		while (running) {
+			Scanner scan = new Scanner(System.in);
+
+			System.out.println("--- 메뉴 ---");
+			System.out.println("1. 성적입력");
+			System.out.println("2. 성적출력");
+			System.out.println("3. 종료");
+
+			System.out.print(">");
+			menu = scan.nextInt();
+
+			switch (menu) {
+			case 1:
+				inputExam(exams, current);
+				break;
+			case 2:
+				printExam(exams, current);
+				break;
+			case 3:
+				running = false;
+				System.out.println("Good-bye ~~");
+				break;
+			default:
+				System.out.println("입력오류, 1~3번까지만 입력할 수 있습니다.");
+				break;
+			}
+		}
+	}
+
+	private static void printExam(Exam[] exams, int current) {
+
+		for (int i=0; i<current; i++) {
+			
+			int total = 0;
+			float avg;
+			
+			System.out.printf("--- %d반 결과 ---\n", i+1);
+			
+			total = exams[i].kor + exams[i].eng + exams[i].math;
+			
+			avg = total / 3.0f;
+			
+			
+			System.out.printf("국어 = %d\n", exams[i].kor);
+			System.out.printf("영어 = %d\n", exams[i].eng);
+			System.out.printf("수학 = %d\n", exams[i].math);
+			System.out.printf("합계 = %d\n", total);
+			System.out.printf("평균 = %.2f\n", avg);
+			System.out.println();
+		}
+	}
+
+	private static void inputExam(Exam[] exams, int current) {
+
+			Scanner scan = new Scanner(System.in);
+			
+			int kor;
+			int eng;
+			int math;
+			
+			System.out.printf("--- %d반  ---\n", 1);
+			
+			do {
+				System.out.printf("국어 : ");
+				kor = scan.nextInt();
+				if (kor < 0 || 100 < kor)
+					System.out.println("유효한 범위(0~100)를 넘어갔습니다. 다시 입력해 주세요.");
+			} while (kor < 0 || 100 < kor);
+			
+			do {
+				System.out.printf("영어 : ");
+				eng = scan.nextInt();
+				if (eng < 0 || 100 < eng)
+					System.out.println("유효한 범위(0~100)를 넘어갔습니다. 다시 입력해 주세요.");
+			} while (eng < 0 || 100 < eng);
+			
+			do {
+				System.out.printf("국어 : ");
+				math = scan.nextInt();
+				if (math < 0 || 100 < math)
+					System.out.println("유효한 범위(0~100)를 넘어갔습니다. 다시 입력해 주세요.");
+			} while (math < 0 || 100 < math);
+			
+			int i = current;
+			exams[i] = new Exam();
+			
+			exams[i].kor = kor;
+			exams[i].eng = eng;
+			exams[i].math = math;
+			
+			current++;
+			
+			System.out.println();
+		
+
+	}
+
+}

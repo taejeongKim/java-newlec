@@ -1,0 +1,25 @@
+package drawing;
+
+public class Circle extends Shape {
+
+	private int diameter;
+
+	public Circle() {
+		super();
+	}
+	
+	public Circle(int x, int y) {
+		super(x, y);
+	}
+	
+	// getter & setter
+	public int getDiameter() {
+		return diameter;
+	}
+
+	public void setDiameter(int diameter) {
+		this.diameter = diameter;
+	}
+	
+	
+}
