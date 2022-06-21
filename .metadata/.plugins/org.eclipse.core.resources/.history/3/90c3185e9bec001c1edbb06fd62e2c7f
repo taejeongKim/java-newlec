@@ -1,8 +1,0 @@
-package test;
-
-public class ExamList {
-
-	Exam[] exams1;
-	int current;
-	
-}

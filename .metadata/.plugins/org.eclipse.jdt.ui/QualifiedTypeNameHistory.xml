@@ -43,7 +43,15 @@
     <fullyQualifiedTypeName name="temp.LingoviExamConsole"/>
     <fullyQualifiedTypeName name="temp.LingoviExam"/>
     <fullyQualifiedTypeName name="temp.Program"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="ex27.interface_.Program"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="ex27.interface_.B"/>
+    <fullyQualifiedTypeName name="ex27.interface_.A"/>
+    <fullyQualifiedTypeName name="ex27.interface_2.B"/>
+    <fullyQualifiedTypeName name="temp.TempProgram"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="ex27.interface_3.C"/>
+    <fullyQualifiedTypeName name="java.awt.event.WindowListener"/>
+    <fullyQualifiedTypeName name="myPackage.GameWindowListener"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 </qualifiedTypeNameHistroy>

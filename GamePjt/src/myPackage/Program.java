@@ -9,6 +9,7 @@ package myPackage;
 
 
 import java.awt.Frame;
+import java.awt.event.WindowListener;
 
 public class Program {
 
@@ -17,6 +18,8 @@ public class Program {
 		// frame을 좀 바꿔보자
 //		Frame frame = new Frame();
 		GameFrame frame = new GameFrame();
+		WindowListener listener = new GameWindowListener();
+		frame.addWindowListener(listener);
 		frame.setVisible(true);
 	}
 

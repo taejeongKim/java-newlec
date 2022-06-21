@@ -1,9 +1,0 @@
-package ex25.inheritance;
-
-public class NewlecExam extends Exam {
-
-	private int com;
-	
-	
-	
-}
