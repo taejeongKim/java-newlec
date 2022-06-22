@@ -1,9 +1,9 @@
-package myPackage;
+package ex34.interface_game;
 
 /*
  * [task]
- * 1. 상속을 배웠으니 실전에서 어떻게 사용되는지 알아보자.
- * 2. 윈도우 창 클래스인 Frame을 상속받아 사용해본다.
+ * 1. 윈도우 창의 일부기능 (창닫기)을 인터페이스로 구현하는 것을 연습
+ * 2. 여기서는 클래스단위(갭슐) 부품을 만들어 끼워본다.
  * */
 
 
@@ -15,11 +15,11 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		// frame을 좀 바꿔보자
-//		Frame frame = new Frame();
 		GameFrame frame = new GameFrame();
+		// 리스너 장착 (frame.addWindowListener())
 		WindowListener listener = new GameWindowListener();
 		frame.addWindowListener(listener);
+		
 		frame.setVisible(true);
 	}
 

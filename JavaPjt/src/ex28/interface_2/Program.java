@@ -1,4 +1,4 @@
-package ex27.interface_2;
+package ex28.interface_2;
 /*
  * A와 B는 강하게 결합되어 있다. (Composition 관계)
  * */

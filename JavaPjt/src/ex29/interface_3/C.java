@@ -1,4 +1,4 @@
-package ex27.interface_3;
+package ex29.interface_3;
 
 public class C implements X{
 

@@ -1,4 +1,4 @@
-package ex27.interface_2;
+package ex28.interface_2;
 
 public class A {
 // 미래에 구현될 자료형 X

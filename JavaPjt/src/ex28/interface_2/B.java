@@ -1,4 +1,4 @@
-package ex27.interface_2;
+package ex28.interface_2;
 // 인터페이스를 구현했음을 명시
 public class B implements X {
 

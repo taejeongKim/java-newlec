@@ -1,4 +1,4 @@
-package ex27.interface_3;
+package ex29.interface_3;
 /*
  * 인터페이스
  * 1. 서로간의 약속임.

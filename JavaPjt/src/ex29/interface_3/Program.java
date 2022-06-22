@@ -1,4 +1,4 @@
-package ex27.interface_3;
+package ex29.interface_3;
 /* [task]
  * 1. B뿐아니라 새로운 C, D 등의 부품에 소스코드 수정없이 대응하도록 개발한다.
  * [hint]

@@ -1,4 +1,4 @@
-package myPackage;
+package ex34.interface_game;
 
 import java.awt.Frame;
 import java.awt.Graphics;
