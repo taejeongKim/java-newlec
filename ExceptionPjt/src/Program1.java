@@ -8,7 +8,7 @@ public class Program1 {
 		
 		// static 함수 사용
 		int result = 0;
-		result = Calculator.add(3,-5);
+		result = Calculator.add(3,3000);
 		// 위 코드에서 예외가 발생하고 있다.
 		// 예외를 여기서 처리하지 않고 throw 하게 되면,
 		// 자바 런타임환경에게 던져져서 프로그램이 멈춘다.
