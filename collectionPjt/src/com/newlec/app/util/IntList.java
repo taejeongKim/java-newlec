@@ -23,7 +23,9 @@ public class IntList {
 //		for(int i=0; i<current; i++)
 //			nums[i] = 0;
 //		nums = new int[3];
-		current = 0;
+//		current = 0;
+		
+	
 	}
 
 	public int size() {

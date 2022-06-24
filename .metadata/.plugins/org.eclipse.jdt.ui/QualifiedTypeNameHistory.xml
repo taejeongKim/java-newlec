@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.PrintStream"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="myPackage.Program"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="test.Exam"/>
@@ -33,10 +31,8 @@
     <fullyQualifiedTypeName name="ex24.ui_code_seperation.ExamConsole"/>
     <fullyQualifiedTypeName name="temp.Operation"/>
     <fullyQualifiedTypeName name="temp.Circle"/>
-    <fullyQualifiedTypeName name="ex25.inheritance.NewlecExam"/>
     <fullyQualifiedTypeName name="java.awt.Frame"/>
     <fullyQualifiedTypeName name="myPackage.GameFrame"/>
-    <fullyQualifiedTypeName name="ex25.inheritance.Exam"/>
     <fullyQualifiedTypeName name="temp.ExamConsole"/>
     <fullyQualifiedTypeName name="temp.LingoviExamConsole"/>
     <fullyQualifiedTypeName name="temp.LingoviExam"/>
@@ -59,5 +55,9 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="com.newlec.app.util.IntList"/>
+    <fullyQualifiedTypeName name="temp.IntList"/>
     <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="ex26.abstraction.NewlecExam"/>
+    <fullyQualifiedTypeName name="ex25.inheritance.Exam"/>
+    <fullyQualifiedTypeName name="ex25.inheritance.NewlecExam"/>
 </qualifiedTypeNameHistroy>

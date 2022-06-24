@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/JavaPrj"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/JavaPjt"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
