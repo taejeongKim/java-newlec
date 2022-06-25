@@ -11,6 +11,16 @@ public class ObjectList {
 	}
 	
 	public void add(Object num) {
+		
+		int amount = 5;
+		int capa = nums.length;
+		if (current >= capa) {
+			Object[] temp = new Object[current + amount];
+			for (int i=0; i<current; i++)
+				temp[i] = nums[i];
+			nums = temp;
+		}
+		
 		nums[current] = num;
 		current++;
 		

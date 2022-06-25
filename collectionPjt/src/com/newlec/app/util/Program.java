@@ -11,7 +11,7 @@ public class Program {
 //		IntList list = new IntList();
 //		ObjectList list = new ObjectList();
 		// 나는 정수형을 원한다. 제네릭입니다.
-		GList<Integer, String> list = new GList<>();
+		GList<Integer> list = new GList<>();
 		list.add(3);
 		list.add(4);
 		int size = list.size();

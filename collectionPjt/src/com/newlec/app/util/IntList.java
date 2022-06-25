@@ -11,6 +11,18 @@ public class IntList {
 	}
 	
 	public void add(int num) {
+		
+		/* 가변형 배열 */
+		int amount = 5;
+		int capa = nums.length;
+		if (current >= capa) {
+			int[] temp = new int[current + amount];
+			for (int i=0; i<current; i++)
+				temp[i] = nums[i];
+			nums = temp;
+		}
+		//-------------------
+		
 		nums[current] = num;
 		current++;
 		
@@ -23,7 +35,7 @@ public class IntList {
 //		for(int i=0; i<current; i++)
 //			nums[i] = 0;
 //		nums = new int[3];
-//		current = 0;
+		current = 0;
 		
 	
 	}

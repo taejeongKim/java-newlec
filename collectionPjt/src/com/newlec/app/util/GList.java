@@ -1,18 +1,32 @@
 package com.newlec.app.util;
 // 제네릭 콜렉션
 // T = Type. 아무거나 써도 된다. 두개이상 쓸수 있다.
-public class GList<T1, T2> {
+public class GList<T> {
 
 	private Object[] nums;
 	private int current; // 현재 저장 위치
+	private int capacity; // 저장 가능량
+	private int amount; // 늘어나는 단위
 	
 	public GList() {
 		//생성은 Object 클래스 사용
-		nums = new Object[3];
 		current = 0;
+		capacity = 3;
+		amount = 5;
+		nums = new Object[capacity];
 	}
 	// 입/출력 시 T로 변환
-	public void add(T1 num) {
+	public void add(T num) {
+		
+		/* 가변형으로 수정 */
+		if (capacity <= current) {
+			Object[] temp = new Object[capacity + amount];
+			for (int i=0; i<capacity; i++)
+				temp[i] = nums[i];
+			nums = temp;
+			capacity += amount;
+		}
+		
 		nums[current] = num;
 		current++;
 		
@@ -34,10 +48,10 @@ public class GList<T1, T2> {
 		return current;
 	}
 
-	public T1 get(int index) {
+	public T get(int index) {
 		if (current <= index)
 			throw new IndexOutOfBoundsException();
-		return (T1) nums[index];
+		return (T) nums[index];
 	}
 
 }
