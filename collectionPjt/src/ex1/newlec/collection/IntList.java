@@ -1,25 +1,27 @@
-package com.newlec.app.util;
+package ex1.newlec.collection;
 
-public class ObjectList {
+public class IntList {
 
-	private Object[] nums;
+	private int[] nums;
 	private int current; // 현재 저장 위치
 	
-	public ObjectList() {
-		nums = new Object[3];
+	public IntList() {
+		nums = new int[3];
 		current = 0;
 	}
 	
-	public void add(Object num) {
+	public void add(int num) {
 		
+		/* 가변형 배열 */
 		int amount = 5;
 		int capa = nums.length;
 		if (current >= capa) {
-			Object[] temp = new Object[current + amount];
+			int[] temp = new int[current + amount];
 			for (int i=0; i<current; i++)
 				temp[i] = nums[i];
 			nums = temp;
 		}
+		//-------------------
 		
 		nums[current] = num;
 		current++;
@@ -33,7 +35,7 @@ public class ObjectList {
 //		for(int i=0; i<current; i++)
 //			nums[i] = 0;
 //		nums = new int[3];
-//		current = 0;
+		current = 0;
 		
 	
 	}
@@ -42,7 +44,7 @@ public class ObjectList {
 		return current;
 	}
 
-	public Object get(int index) {
+	public int get(int index) {
 		if (current <= index)
 			throw new IndexOutOfBoundsException();
 		return nums[index];

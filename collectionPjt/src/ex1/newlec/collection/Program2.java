@@ -1,4 +1,4 @@
-package com.newlec.app.util;
+package ex1.newlec.collection;
 
 import java.util.ArrayList;
 import java.util.HashMap;

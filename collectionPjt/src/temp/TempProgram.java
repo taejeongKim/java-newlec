@@ -1,23 +1,27 @@
 package temp;
 
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
 public class TempProgram {
 
 	public static void main(String[] args) {
-		// 가변형 배열 = 콜렉션
 		
-		GList<String> list = new GList<>();
-		list.add("I");
-		list.add("You");
-		int size = list.size();
-		System.out.printf("size : %d\n", size);
+		Set set = new HashSet();
+		set.add(3);
+		set.add(3);
+		set.add(3);
+		set.add(3);
+		set.add(3);
 		
-		list.clear();
-		size = list.size();
-		System.out.printf("size : %d\n", size);
-
-		list.add("pretty");
-		String num = list.get(0); 
-		System.out.printf("num : %s\n", num);
+		System.out.println(set.size());
+		
+		Iterator it = set.iterator();
+		
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
 		
 	}
 

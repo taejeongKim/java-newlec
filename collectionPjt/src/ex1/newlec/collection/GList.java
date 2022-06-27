@@ -1,4 +1,4 @@
-package com.newlec.app.util;
+package ex1.newlec.collection;
 // 제네릭 콜렉션
 // T = Type. 아무거나 써도 된다. 두개이상 쓸수 있다.
 public class GList<T> {

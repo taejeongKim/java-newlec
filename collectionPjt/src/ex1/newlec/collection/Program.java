@@ -1,4 +1,4 @@
-package com.newlec.app.util;
+package ex1.newlec.collection;
 /*
  * 1. int collection (콜렉션)을 직접 만들어 보자.
  * 2. 위 콜렉션을 Object형으로 바꾸어 본다.
