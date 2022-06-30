@@ -1,5 +1,7 @@
 package ex2.nam.iterator;
-
+/*
+ * iterator 사용법
+ * */
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;

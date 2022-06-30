@@ -1,26 +1,29 @@
 package test;
 
-import ex25.inheritance.Exam;
-
 public class TestProgram2 {
-	//
-	static int cv;
-	static Exam exam;
-	boolean x;
 	
 	public static void main(String[] args) {
-		int iv = 30;
-		// auto initiation
-		printV(iv);
+
+		int[] arr = new int[3];
+		
+		arr[0] = 3;
+		
+		for (int i=0; i<arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+		
+		int[] temp = new int[8];
+		
+		for (int i=0; i<arr.length; i++) {
+			temp[i] = arr[i];
+		}
+		
+		arr = temp;
+		
+		for (int i=0; i<arr.length; i++) {
+			System.out.println(arr[i]);
+		}
 		
 	}
-	
-	static void printV(int i) {
-		TestProgram2 tst = new TestProgram2();
-		
-		System.out.println(i);
-		System.out.println(cv);
-		System.out.println(exam);
-		System.out.println(tst.x);
-	}
+
 }

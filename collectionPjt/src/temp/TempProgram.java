@@ -1,27 +1,26 @@
 package temp;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class TempProgram {
 
 	public static void main(String[] args) {
 		
-		Set set = new HashSet();
-		set.add(3);
-		set.add(3);
-		set.add(3);
-		set.add(3);
-		set.add(3);
+		int[] arr = {1,2,3,4,5};
 		
-		System.out.println(set.size());
+		for (int v : arr)
+			System.out.println(v);
 		
-		Iterator it = set.iterator();
+		Collection list = new ArrayList();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list.add(4);
+		list.add(5);
 		
-		while(it.hasNext()) {
-			System.out.println(it.next());
-		}
+		for (Object v : list)
+			System.out.println(v);
 		
 	}
 

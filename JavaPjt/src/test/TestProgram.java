@@ -39,10 +39,11 @@ public class TestProgram {
 
 				
 				for (int i=0; i<3; i++) {
+					
 					int kor = kors[i];
 					
 					do {
-						System.out.print("국어1 > ");
+						System.out.printf("국어%d > ", i+1);
 						kor = scan.nextInt();
 						if (kor < 0 || 100 < kor)
 							System.out.println("out of bounds, type again!");
