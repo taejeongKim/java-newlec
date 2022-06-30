@@ -8,6 +8,7 @@ public class Program {
 		A a = new A();
 		a.print();
 
+
 	}
 
 }

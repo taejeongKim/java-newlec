@@ -10,8 +10,11 @@ public class Program {
 		System.out.write('3'+3);
 		System.out.write('3'+4);
 		
+		
 		// outputstream 버퍼에 담긴 것을 내보낸다.
 		System.out.flush();  
+		
+		System.out.println(3);
 		
 	}
 

@@ -30,8 +30,8 @@ public class Program {
 		System.out.println("┌──────────────────┐");
 		System.out.println("│      성적출력       │");
 		System.out.println("└──────────────────┘");
-		System.out.println("국어1 : 0");
-		System.out.println("국어2 : 0");
+		System.out.println("국어1 : 0국");
+		System.out.println("어2 : 0");
 		System.out.println("국어3 : 0");
 		System.out.println("총점 : 0");
 		System.out.println("평균 : 0");
