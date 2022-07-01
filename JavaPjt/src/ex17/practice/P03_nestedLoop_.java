@@ -23,7 +23,8 @@ public class P03_nestedLoop_ {
 		System.out.printf("%d ", 7);
 		System.out.printf("%d ", 8);
 		System.out.printf("%d ", 9);
-
+		System.out.println();
+		
 		System.out.println();
 		// case 2
 

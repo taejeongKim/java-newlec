@@ -1,5 +1,7 @@
 package ex15.marray;
-
+/*
+ * 10 by 10 난수표 발행
+ * */
 public class Tenbyten {
 
 	public static void main(String[] args) {
@@ -9,23 +11,15 @@ public class Tenbyten {
 		int N = 10;
 		int[][] arr = new int[N][N];
 		
-		//input
-		for (int j=0; j<N; j++) {
-			for (int i=0; i<N; i++) {
-				arr[j][i] = (int)(Math.random()*10);
-			}
-		}
-		
 		//print
 		for (int j=0; j<N; j++) {
 			for (int i=0; i<N; i++) {
+				arr[j][i] = (int)(Math.random()*10);
 				System.out.print(arr[j][i] + " ");
 			}
 			System.out.println();
 			
 		}
-		
-		
 
 	}
 

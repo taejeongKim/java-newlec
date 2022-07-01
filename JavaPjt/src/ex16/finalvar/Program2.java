@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Program2 {
 	public static void main(String[] args) {
 		
-		final int M = 6; // 학년수
+		final int M = 3; // 반수
 		final int N = 3; // 과목수
 		int[][] kors = new int[M][N];
 		int total;

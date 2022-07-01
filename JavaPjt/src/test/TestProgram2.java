@@ -4,25 +4,12 @@ public class TestProgram2 {
 	
 	public static void main(String[] args) {
 
-		int[] arr = new int[3];
-		
-		arr[0] = 3;
-		
-		for (int i=0; i<arr.length; i++) {
-			System.out.println(arr[i]);
+		for (int j = 0; j < 3; j++) {
+			for (int i=0; i<3; i++)
+				System.out.printf("%d ", (i+1)+j*3);
+			System.out.println();
 		}
 		
-		int[] temp = new int[8];
-		
-		for (int i=0; i<arr.length; i++) {
-			temp[i] = arr[i];
-		}
-		
-		arr = temp;
-		
-		for (int i=0; i<arr.length; i++) {
-			System.out.println(arr[i]);
-		}
 		
 	}
 

@@ -17,7 +17,7 @@ public class Program {
 	public static void main(String[] args) {
 
 		//상수형 변수를 사용하면 array 사이즈가 변할 때마다 아래 내용을 모두 수정할 필요가 없다.
-		final int N = 3;
+		final int N = 5;
 		int[] kors = new int[N];
 		int total;
 		float avg;
@@ -79,8 +79,10 @@ public class Program {
 				// -------------- 성적 출력 부분 -----------------
 				
 				//total = kor1 + kor2 + kor3;
-				total = kors[0] + kors[1] + kors[2];
-				avg = total / 3.0f; // 처음부터 float으로 나눠줌.
+				total = 0;
+				for (int i=0; i<N; i++)
+					total += kors[i];
+				avg = total / (float)N; // 처음부터 float으로 나눠줌.
 				
 				System.out.println("┌──────────────────┐");
 				System.out.println("│      성적출력       │");

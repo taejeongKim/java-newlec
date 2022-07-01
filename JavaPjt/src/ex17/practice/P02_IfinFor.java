@@ -34,8 +34,8 @@ public class P02_IfinFor {
 			// if문 중 상위에 있는 것이 보다 특별한 경우, 드문 경우이
 			if (i==4) 	
 				System.out.printf("%c", 'A'+i);
-			else if (i%2==0)
-				System.out.print(" ");
+			else if (i%2==1)
+				System.out.print("  ");
 			else  		
 				System.out.printf("%c, ", 'A'+i);
 	}
