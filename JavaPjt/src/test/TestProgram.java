@@ -4,61 +4,51 @@ import java.util.Scanner;
 
 public class TestProgram {
 
-public static void main(String[] args) {
-		//가변적
+	public static void main(String[] args) {
 	
-		ExamList list = new ExamList();
+		ExamConsole list = new ExamConsole(2);
 		int menu;
-		boolean keepLoop = true;
+		boolean running = true;
 		
-		int current = 0;
-
-		while (keepLoop) {
-
-			menu = inputMenu();
+		while (running) {
 			
+			menu = inputMenu();
+		
 			switch (menu) {
-
-			case 1: 
-				list.inputList();
-				
+			case 1:
+				list.inputExam();
 				break;
-				
 			case 2:
-				list.printList();
+				list.printExam();
 				break;
-				
-			case 3: 
-				System.out.println("Good-bye~");
-				keepLoop = false;
+			case 3:
+				System.out.println("good bye~");
+				running = false;
 				break;
-
 			default:
 				System.out.println("입력오류, 1~3번까지만 입력할 수 있습니다.");
 				break;
-			
 			}
+			
 		}
+		
+
 	}
 
-
-
-	static int inputMenu() {
+	private static int inputMenu() {
+		
+		System.out.println("--- 메뉴 --");
 		
 		Scanner scan = new Scanner(System.in);
 		
-		// 메뉴 함수
-		System.out.println("┌──────────────────┐");
-		System.out.println("│      메뉴        │");
-		System.out.println("└──────────────────┘");
+		System.out.println("1) 성적입력");
+		System.out.println("2) 성적출력");
+		System.out.println("3) 종료");
 		
-		System.out.println("1. 성적입력");
-		System.out.println("2. 성적출력");
-		System.out.println("3. 종료");
-		
-		System.out.print("> ");
+		System.out.print(">");
 		int menu = scan.nextInt();
 		
 		return menu;
 	}
+
 }
