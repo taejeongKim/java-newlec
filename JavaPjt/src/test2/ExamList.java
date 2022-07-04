@@ -1,15 +1,14 @@
-package test;
-
-import java.util.Scanner;
+package test2;
 
 public class ExamList {
 
 	private Exam[] exams;
-	private int current; 
+	private int current;
 	
 	public ExamList() {
 		this(3);
 	}
+	
 	public ExamList(int size) {
 		exams = new Exam[size];
 		current = 0;
@@ -18,8 +17,8 @@ public class ExamList {
 	public int getCurrent() {
 		return current;
 	}
+
 	public void add(Exam exam) {
-		//가변적 배열
 		
 		if (exams.length <= current) {
 			Exam[] temp = new Exam[current + 5];
@@ -34,8 +33,9 @@ public class ExamList {
 	}
 
 	public Exam get(int i) {
-		
 		return exams[i];
 	}
+
+
 
 }

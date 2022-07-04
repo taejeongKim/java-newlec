@@ -1,4 +1,4 @@
-package drawing;
+package ex26.abstraction1;
 
 public class Rect extends Shape{
 

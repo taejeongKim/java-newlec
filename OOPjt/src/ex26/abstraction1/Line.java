@@ -1,4 +1,4 @@
-package drawing;
+package ex26.abstraction1;
 
 public class Line extends Shape{
 

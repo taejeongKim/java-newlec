@@ -1,5 +1,9 @@
-package drawing;
+package ex26.abstraction1;
 
+/*
+ * shape클래스를 추상화하여 서비스 집중화를 해보라.
+ * 추상화를 하게되면 객체로서는 사용할 수 없다.
+ * */
 public abstract class Shape {
 
 	private int x;

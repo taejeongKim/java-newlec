@@ -1,54 +1,57 @@
-package test;
+package temp;
 
 import java.util.Scanner;
 
-public class TestProgram {
+public class Program {
 
 	public static void main(String[] args) {
-	
-		ExamConsole list = new ExamConsole(2);
+		
+		// 메뉴 (성적입력/성적출력/종료)
+		
 		int menu;
 		boolean running = true;
+		final int INPUT_MENU = 1;
+		final int PRINT_MENU = 2;
+		final int EXIT_MENU = 3;
+		NewlecExamConsole console = new NewlecExamConsole();
 		
-		while (running) {
+		while(running) {
 			
 			menu = inputMenu();
-		
+			
 			switch (menu) {
-			case 1:
-				list.inputExam();
+			case INPUT_MENU:
+				console.input();
 				break;
-			case 2:
-				list.printExam();
+			case PRINT_MENU:
+				console.print();
 				break;
-			case 3:
-				System.out.println("good bye~");
+			case EXIT_MENU:
+				System.out.println("Good Bye ~");
 				running = false;
 				break;
 			default:
-				System.out.println("입력오류, 1~3번까지만 입력할 수 있습니다.");
+				System.out.println("input menu again");
 				break;
 			}
-			
 		}
-		
 
 	}
 
 	private static int inputMenu() {
 		
-		System.out.println("--- 메뉴 --");
 		
 		Scanner scan = new Scanner(System.in);
 		
+		System.out.println("--- MENU ---");
 		System.out.println("1) 성적입력");
 		System.out.println("2) 성적출력");
 		System.out.println("3) 종료");
+		System.out.print("> ");
 		
-		System.out.print(">");
 		int menu = scan.nextInt();
 		
 		return menu;
 	}
-
+	
 }

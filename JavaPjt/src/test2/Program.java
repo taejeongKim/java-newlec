@@ -1,56 +1,62 @@
-package ex26.abstraction;
+package test2;
 
 import java.util.Scanner;
 
 /*
- [task]
- 1. Exam을 상속하여 lewlecExam을 만들어보자.
- 2. 새로운 과목 : computer
- 3. 오버라이딩 : total(), avg()
- 4. 메소드 동적 바인딩
- */
+ * 성적관리프로그램
+ * 과목 3
+ * 반 (가변적)
+ * */
 public class Program {
 
 	public static void main(String[] args) {
 		
-		NewlecExamConsole console = new NewlecExamConsole();
+		// 메뉴 (성적입력/성적출력/종료)
+		
 		int menu;
 		boolean running = true;
+		final int INPUT_MENU = 1;
+		final int PRINT_MENU = 2;
+		final int EXIT_MENU = 3;
+		ExamConsole console = new ExamConsole();
 		
 		while(running) {
 			
-			menu = selectMenu();
+			menu = inputMenu();
 			
 			switch (menu) {
-			case 1:
+			case INPUT_MENU:
 				console.input();
 				break;
-			case 2:
+			case PRINT_MENU:
 				console.print();
 				break;
-			case 3:
-				System.out.println("Good bye ~");
+			case EXIT_MENU:
+				System.out.println("Good Bye ~");
 				running = false;
 				break;
 			default:
-				System.out.println("Please input again!");
+				System.out.println("input menu again");
 				break;
 			}
 		}
+
 	}
 
-	private static int selectMenu() {
+	private static int inputMenu() {
+		
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("--- 메뉴 ---");
+		System.out.println("--- MENU ---");
 		System.out.println("1) 성적입력");
 		System.out.println("2) 성적출력");
 		System.out.println("3) 종료");
-		System.out.println("> ");
+		System.out.print("> ");
+		
 		int menu = scan.nextInt();
-				
+		
 		return menu;
 	}
-
+	
 }

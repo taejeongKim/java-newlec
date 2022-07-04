@@ -1,4 +1,4 @@
-package ex26.abstraction;
+package ex27.abstraction2;
 
 import java.util.Scanner;
 
