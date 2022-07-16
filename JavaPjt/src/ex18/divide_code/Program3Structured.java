@@ -2,7 +2,7 @@
  * 코드 나누기 연습
  * (문제) 함수들이 전역변수들의 변화에 영향을 받고 있다.
  * 함수에서 필요한 변수를 파라미터로 제공 받도록 해 보라.
- * 이름 함수의 고립화라고 한다.
+ * 이를 함수의 고립화라고 한다.
  * 함수의 고립화로 외부 환경에 취약해진 함수를 강하게 만들라
  */
 
@@ -21,9 +21,7 @@ public class Program3Structured {
 		int menu;
 		boolean keepLoop = true;
 
-		for (int i=0; i<3; i++) {
-			korList[i] = 0;
-		}
+
 
 //		종료:
 		while (keepLoop) {
@@ -58,7 +56,6 @@ public class Program3Structured {
 	static void inputKors(int[] kors) {
 		
 		// 성적 입력 함수 
-		
 		Scanner scan = new Scanner(System.in);
 		int kor; // 불필요한 연산을 최소화하기 위해 변수활용
 		
@@ -83,6 +80,7 @@ public class Program3Structured {
 		// 성적 출력 함수 
 		
 		// 아래 변수들은 성적 출력에만 사용되고 있으므로 전역화할 필요 없다.
+		
 		int total;
 		float avg;
 		
@@ -94,7 +92,7 @@ public class Program3Structured {
 		System.out.println("└──────────────────┘");
 		
 		for (int i = 0; i < 3; i++) {
-			System.out.printf("국어%d : %3d\n", i + 1, kors[i]);
+			System.out.printf("국어%d : %3d\n", i+1, kors[i]);
 			
 		}
 		

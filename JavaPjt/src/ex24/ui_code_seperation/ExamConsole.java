@@ -85,4 +85,23 @@ public class ExamConsole {
 			//data 추가하는 부분 분리
 			list.add(exam);
 	}
+
+	public int inputMenu() {
+
+		Scanner scan = new Scanner(System.in);
+
+		// 메뉴 함수
+		System.out.println("┌──────────────────┐");
+		System.out.println("│      메뉴        │");
+		System.out.println("└──────────────────┘");
+
+		System.out.println("1. 성적입력");
+		System.out.println("2. 성적출력");
+		System.out.println("3. 종료");
+
+		System.out.print("> ");
+		int menu = scan.nextInt();
+		
+		return menu;
+	}
 }

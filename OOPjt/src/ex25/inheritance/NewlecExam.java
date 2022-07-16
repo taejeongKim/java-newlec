@@ -1,5 +1,7 @@
 package ex25.inheritance;
 
+import ex24.ui_code_seperation.Exam;
+
 public class NewlecExam extends Exam {
 
 	private int com;

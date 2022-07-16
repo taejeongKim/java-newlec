@@ -1,11 +1,11 @@
 /*
+ * 본 강좌의 코드 완성
+ * 
 <task>
 1. ui와 관련된 코드는 분리하여 ExamConsole 클래스를 만든다.
 2. 이유: ui 관련된 부분은 플랫폼에 따라 변화가 많기 때문...
 */
 package ex24.ui_code_seperation;
-
-import java.util.Scanner;
 
 public class Program {
 
@@ -17,7 +17,7 @@ public class Program {
 
 		while (keepLoop) {
 
-			menu = inputMenu();
+			menu = list.inputMenu();
 
 			switch (menu) {
 
@@ -44,23 +44,6 @@ public class Program {
 	}
 
 
-	static int inputMenu() {
 
-		Scanner scan = new Scanner(System.in);
-
-		// 메뉴 함수
-		System.out.println("┌──────────────────┐");
-		System.out.println("│      메뉴        │");
-		System.out.println("└──────────────────┘");
-
-		System.out.println("1. 성적입력");
-		System.out.println("2. 성적출력");
-		System.out.println("3. 종료");
-
-		System.out.print("> ");
-		int menu = scan.nextInt();
-		
-		return menu;
-	}
 
 }

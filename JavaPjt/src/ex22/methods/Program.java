@@ -25,10 +25,10 @@ public class Program {
 			switch (menu) {
 
 			case 1:
-				// 
-//				ExamList.inputList(list);
-				//인스턴스 메소드로 구현
-				list.inputList();
+				// static method
+				ExamList.inputList(list);
+				// instance method
+//				list.inputList();
 				break;
 
 			case 2:

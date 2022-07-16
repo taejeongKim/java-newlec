@@ -13,8 +13,8 @@ public class Program {
 
 		GameFrame frame = new GameFrame();
 		/* 아래 코드를 생성자로 옮김 */
-		//frame.addWindowListener(frame);
-		//frame.setVisible(true);
+//		frame.addWindowListener(frame);
+//		frame.setVisible(true);
 	}
 
 }

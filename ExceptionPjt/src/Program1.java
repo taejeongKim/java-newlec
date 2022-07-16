@@ -10,8 +10,8 @@ public class Program1 {
 		int result = 0;
 		result = Calculator.add(3,3000);
 		// 위 코드에서 예외가 발생하고 있다.
-		// 예외를 여기서 처리하지 않고 throw 하게 되면,
-		// 자바 런타임환경에게 던져져서 프로그램이 멈춘다.
+		// 예외를 main에서 처리하지 않고 throw 하게 되면 default로 처리됨.
+		// 즉, 자바 런타임환경에게 던져져서 프로그램이 멈춘다.
 		
 		System.out.printf("add : %d\n",result);
 		result = Calculator.sub(3,5);

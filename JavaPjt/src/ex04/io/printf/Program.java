@@ -24,7 +24,7 @@ public class Program {
 		avg = total / 3.0f; // 처음부터 float으로 나눠줌.
 		
 		System.out.println("┌──────────────────┐");
-		System.out.println("│      성적출력       │");
+		System.out.println("│      성적출력    │");
 		System.out.println("└──────────────────┘");
 		System.out.printf("국어1 : %3d\n", kor1);
 		System.out.printf("국어2 : %3d\n", kor2);

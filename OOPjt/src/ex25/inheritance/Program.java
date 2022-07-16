@@ -1,4 +1,5 @@
 package ex25.inheritance;
+
 /*
  * [task]
  * 1. 상속을 통하여 NewlecExam을 만들라
@@ -17,6 +18,7 @@ public class Program {
 		
 		System.out.println(exam.total());
 		System.out.println(exam.avg());
+		
 	}
 
 }
