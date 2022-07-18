@@ -1,4 +1,4 @@
-package ex30.inner_class;
+package ex28.inner_class1;
 
 public class Program3 {
 	//

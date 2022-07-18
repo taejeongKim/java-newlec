@@ -4,7 +4,12 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
+/*
+ * [기본 형식]
+ * for (type var : iterate) {
+    body-of-loop
+}
+ * */
 public class Program {
 
 	public static void main(String[] args) {

@@ -1,18 +1,21 @@
 package ex2.nam.iterator;
-/*
- * iterator 사용법
- * */
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
+import java.util.TreeSet;
 
 public class Program1 {
 
 	public static void main(String[] args) {
 
-		List list = new ArrayList();
+		// 참조형을 Collection으로 해 놓으면 편하다.
+		// 다형성
+//		Collection list = new HashSet();
+//		Collection list = new ArrayList();
+//		Collection list = new LinkedList();
+		Collection list = new TreeSet();
+		
 		list.add("1");
 		list.add("2");
 		list.add("3");
@@ -40,13 +43,14 @@ public class Program1 {
 		// iterator는 collection 안의 모든 data구조에 공히 적용된다.
 		// 따라서, 중간에 collection 종류를 변경해도 코드를 수정할 필요가 없다.
 		
-		// ex) 아래 코드는 set에는 오류가 된다.
-		// set에는 get()없으므로
+		// 아래 코드는 set에는 오류가 된다.
+		// set에는 get()없으므로...
+		// iterator로 썼다면 상관이 없었을 것.
 		
-		for (int i=0; i<list.size(); i++) {
-			Object obj = list.get(i);
-			System.out.println(obj);
-		}
+//		for (int i=0; i<list.size(); i++) {
+//			Object obj = list.get(i);
+//			System.out.println(obj);
+//		}
 		
 		Map<String, Object> map = new HashMap<>();
 		map.put("id", 3);

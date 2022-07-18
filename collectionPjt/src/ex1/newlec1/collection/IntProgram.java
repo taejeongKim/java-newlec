@@ -1,10 +1,10 @@
-package ex1.newlec.collection;
+package ex1.newlec1.collection;
 
-public class Program {
+public class IntProgram {
 
 	public static void main(String[] args) {
 
-		IntList2 list = new IntList2();
+		IntList list = new IntList();
 		list.add(3);
 		list.add(5);
 		list.clear();
@@ -15,6 +15,7 @@ public class Program {
 		System.out.printf("num: %d\n", num);
 		num = list.get(1);
 		
+	
 	}
 
 }

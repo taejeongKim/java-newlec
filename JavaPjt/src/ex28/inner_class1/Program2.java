@@ -1,4 +1,4 @@
-package ex30.inner_class;
+package ex28.inner_class1;
 
 class AA{ //외부 클래스
 	int i = 100;

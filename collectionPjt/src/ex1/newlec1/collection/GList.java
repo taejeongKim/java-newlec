@@ -1,4 +1,4 @@
-package ex1.newlec.collection;
+package ex1.newlec1.collection;
 // 제네릭 콜렉션
 // T = Type. 아무거나 써도 된다. 두개이상 쓸수 있다.
 public class GList<T> {
@@ -15,7 +15,7 @@ public class GList<T> {
 		amount = 5;
 		nums = new Object[capacity];
 	}
-	// 입/출력 시 T로 변환
+	// 파라미터 형식 T로 변환
 	public void add(T num) {
 		
 		/* 가변형으로 수정 */
@@ -48,6 +48,7 @@ public class GList<T> {
 		return current;
 	}
 
+	// 리턴값 T형식으로 변환
 	public T get(int index) {
 		if (current <= index)
 			throw new IndexOutOfBoundsException();
