@@ -1,4 +1,4 @@
-package ex28.inner_class2;
+package ex28.inner_class;
 
 //only one public top level class whose name 
 //matches with file name.

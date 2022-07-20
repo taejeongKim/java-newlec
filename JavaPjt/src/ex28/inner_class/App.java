@@ -1,6 +1,6 @@
-package ex28.inner_class2;
+package ex28.inner_class;
 
-import ex28.inner_class2.Robot.Battery;
+import ex28.inner_class.Robot.Battery;
 
 public class App {
 
